@@ -1,0 +1,70 @@
+{
+  "short_name": "Balaji Services",
+  "name": "Balaji Services",
+  "description": "Professional service business in Hyderabad.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "any"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#102a43",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "safety", "construction", "home-improvement"],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Safety Nets Services",
+      "short_name": "Services",
+      "description": "View our safety nets services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "services-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Get Quote",
+      "short_name": "Quote",
+      "description": "Request a safety nets quote",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "quote-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

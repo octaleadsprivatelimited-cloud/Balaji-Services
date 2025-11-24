@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [">0.2%", "not dead", "not op_mini all"]
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-private-methods",
+    "@babel/plugin-transform-optional-chaining",
+    "@babel/plugin-transform-numeric-separator",
+    "@babel/plugin-transform-class-properties",
+    "@babel/plugin-transform-nullish-coalescing-operator",
+    "@babel/plugin-transform-private-property-in-object"
+  ]
+}
