@@ -1,19 +1,19 @@
 /* TEAM */
-    Founder: Taj Safety Nets Team
-    Site: https://steel-invisible-kills.vercel.app
-    Location: Hyderabad, Telangana, India
+    Founder: Balaji Services Team
+    Site: https://balaji-services.vercel.app
+    Location: Bangalore, Karnataka, India
 
-    Technical Director: Safety Nets Specialist
-    Site: https://steel-invisible-kills.vercel.app
-    Location: Hyderabad, Telangana, India
+    Technical Director: Appliance Service Specialist
+    Site: https://balaji-services.vercel.app
+    Location: Bangalore, Karnataka, India
 
-    Operations Manager: Installation Expert
-    Site: https://steel-invisible-kills.vercel.app
-    Location: Hyderabad, Telangana, India
+    Operations Manager: Service Expert
+    Site: https://balaji-services.vercel.app
+    Location: Bangalore, Karnataka, India
 
 /* SITE */
-    Last update: 2024/10/25
-    Language: English, Hindi, Telugu
+    Last update: 2024/12/28
+    Language: English, Hindi, Kannada
     Doctype: HTML5
     IDE: Visual Studio Code
     Standards: HTML5, CSS3, JavaScript ES6+, React 18
@@ -21,16 +21,16 @@
     Software: Create React App, Node.js, npm
 
 /* THANKS */
-    Name: Safety Standards Organizations
-    Description: Safety nets standards and guidelines
+    Name: Appliance Manufacturers
+    Description: Quality appliances and components
 
-    Name: Construction Industry
-    Description: Safety requirements and best practices
+    Name: Home Service Industry
+    Description: Service standards and best practices
 
-    Name: Safety Equipment Manufacturers
-    Description: Quality safety nets and materials
+    Name: Service Equipment Suppliers
+    Description: Quality tools and spare parts
 
 /* SITE */
-    Name: Taj Safety Nets
-    Description: Leading safety nets installation company in Hyderabad
-    Author: Taj Safety Nets Team
+    Name: Balaji Services
+    Description: Professional home appliance installation, service, and repair in Bangalore
+    Author: Balaji Services Team

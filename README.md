@@ -1,17 +1,17 @@
-# Taj Safety Nets - Safety Nets & Protection Solutions Website
+# Balaji Services - Home Appliances & Service Solutions
 
-A professional, responsive website for a safety nets and protection solutions company operating across India.
+A professional, responsive website for Balaji Services, providing home appliance installation, service, and repair solutions in Bangalore.
 
 ## 🌟 Features
 
 - **Multi-page Website**: Home, Services, About, Calculator, Contact
 - **Responsive Design**: Mobile-first approach, works on all devices
 - **SEO Optimized**: Meta tags, structured data, and semantic HTML
-- **Cost Calculator**: Safety nets installation cost calculator
+- **Service Showcase**: Professional appliance services display
 - **WhatsApp Integration**: Floating WhatsApp button for instant contact
 - **Modern UI/UX**: Professional design with smooth animations
 - **Contact Forms**: Lead generation forms with validation
-- **Service Areas**: Coverage across major cities in India
+- **Service Areas**: Coverage across Bangalore and surrounding areas
 
 ## 🚀 Tech Stack
 
@@ -129,18 +129,19 @@ The build folder will contain all production-ready files.
 
 ## 📞 Contact Information
 
-- **Phone**: +91 9100116156
-- **Email**: info@tajsafetynets.com
-- **Service Areas**: Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata
+- **Phone**: +91 9902730741, +91 8123288996
+- **Email**: shreebalajiserviceblr@gmail.com
+- **Address**: No. 754, Ground Floor, 1st B Cross, Muthyalamma Nagar, Bangalore -560054
+- **Service Areas**: Bangalore and surrounding areas
 
 ## 🔧 Configuration
 
 ### Environment Variables
 Create a `.env` file for environment-specific configurations:
 ```env
-REACT_APP_COMPANY_NAME=Taj Safety Nets
-REACT_APP_PHONE_NUMBER=+917893987771
-REACT_APP_EMAIL=info@tajsafetynets.com
+REACT_APP_COMPANY_NAME=Balaji Services
+REACT_APP_PHONE_NUMBER=+919902730741
+REACT_APP_EMAIL=shreebalajiserviceblr@gmail.com
 ```
 
 ### Tailwind Configuration

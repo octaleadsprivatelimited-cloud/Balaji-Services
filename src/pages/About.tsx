@@ -23,34 +23,34 @@ import {
 
 const About: React.FC = () => {
   const achievements = [
-    { number: "5200+", label: "Projects Done", icon: <CheckCircle className="h-8 w-8" /> },
-    { number: "5100+", label: "Happy Clients", icon: <Users className="h-8 w-8" /> },
-    { number: "40+", label: "Expert Staffs", icon: <Award className="h-8 w-8" /> },
-    { number: "25+", label: "Years Experience", icon: <Globe className="h-8 w-8" /> }
+    { number: "5000+", label: "Appliances Installed", icon: <CheckCircle className="h-8 w-8" /> },
+    { number: "4500+", label: "Happy Customers", icon: <Users className="h-8 w-8" /> },
+    { number: "10+", label: "Service Categories", icon: <Award className="h-8 w-8" /> },
+    { number: "15+", label: "Years Experience", icon: <Globe className="h-8 w-8" /> }
   ];
 
   const values = [
     {
       title: "Quality First",
-      description: "We uphold the highest standards, using only premium materials and components to ensure maximum security and durability for invisible grills.",
+      description: "We uphold the highest standards, offering only premium brands and quality appliances with warranty coverage and reliable performance.",
       icon: <Award className="h-6 w-6" />,
       color: "accent"
     },
     {
       title: "Customer Satisfaction",
-      description: "Your security is our priority — we provide dedicated support, reliable service, and comprehensive invisible grill solutions.",
+      description: "Your satisfaction is our priority — we provide dedicated support, timely service, and comprehensive solutions for all your appliance needs.",
       icon: <Heart className="h-6 w-6" />,
       color: "secondary"
     },
     {
-      title: "Innovation",
-      description: "We continuously embrace the latest invisible grill technologies and industry best practices to deliver superior security solutions.",
+      title: "Expert Service",
+      description: "Our certified technicians bring years of experience and stay updated with the latest appliance technologies to deliver superior installation and repair services.",
       icon: <Lightbulb className="h-6 w-6" />,
       color: "primary"
     },
     {
-      title: "Safety Commitment",
-      description: "We are committed to protecting homes and ensuring security across all our invisible grill installations and services.",
+      title: "Reliability",
+      description: "We are committed to providing dependable service, genuine parts, and long-term support across all our appliance sales and service offerings.",
       icon: <Shield className="h-6 w-6" />,
       color: "accent"
     }
@@ -58,27 +58,27 @@ const About: React.FC = () => {
 
 
   const certifications = [
-    "ISO 9001:2015 Quality Management",
-    "BIS Certified Invisible Grill Materials",
-    "Construction Security Standards",
-    "Industrial Security Compliance",
-    "Invisible Grills Quality Certification",
-    "Workplace Security Standards",
-    "Material Testing & Certification",
-    "Installation Security Protocols"
+    "Expert Technicians",
+    "Genuine Parts Guarantee",
+    "Professional Installation",
+    "Comprehensive Warranty",
+    "Quality Appliance Brands",
+    "Timely Service",
+    "Customer Support",
+    "Reliable Maintenance"
   ];
 
   return (
     <>
       <Helmet>
         <title>About Us | Balaji Services</title>
-        <meta name="description" content="Learn about Balaji Services - Professional service business in Hyderabad." />
+        <meta name="description" content="Learn about Balaji Services - Professional home appliance sales and service in Bangalore. Expert installation and repair for Chimney, Hob, Washing Machine, Geyser, and more." />
         <meta property="og:title" content="About Us | Balaji Services" />
-        <meta property="og:description" content="Professional service business in Hyderabad." />
+        <meta property="og:description" content="Professional service business in Bangalore." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About Us | Balaji Services" />
-        <meta name="twitter:description" content="Professional service business in Hyderabad." />
+        <meta name="twitter:description" content="Professional service business in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>
@@ -86,12 +86,15 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="relative text-white py-20 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/images/safety-nets/slider-7-3.jpg')`
-        }}></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/services/chimney.webp')`
+          }}
+        ></div>
         
         {/* Dark Overlay for Better Text Visibility */}
-        <div className="absolute inset-0 bg-primary-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
@@ -100,7 +103,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl lg:text-5xl font-bold mb-6"
           >
-            About Taj Safety Nets
+            About Balaji Services
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -108,7 +111,7 @@ const About: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-white max-w-3xl mx-auto font-medium"
           >
-            Taj Safety Nets specializes in providing high-quality, durable invisible grills for balconies, windows, and apartments. We offer stylish and safe solutions to protect your home while maintaining unobstructed views. Reliable installation and superior craftsmanship guaranteed.
+            Balaji Services specializes in providing comprehensive home appliance solutions in Bangalore. From kitchen essentials to laundry and water solutions, we offer expert installation, sales, and reliable service for all your home appliance needs. Quality products and professional service guaranteed.
           </motion.p>
         </div>
       </section>
@@ -146,7 +149,7 @@ const About: React.FC = () => {
               Our <span className="text-primary-700">Story</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              A journey of excellence, innovation, and unwavering commitment to safety
+              A journey of excellence, innovation, and unwavering commitment to quality service
             </p>
           </motion.div>
 
@@ -172,7 +175,7 @@ const About: React.FC = () => {
                   >
                     <div className="absolute -left-2 top-0 w-4 h-4 bg-accent-500 rounded-full"></div>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      Founded with <span className="font-bold text-primary-700">25+ years of experience</span>, Taj Safety Nets began with a clear mission: to provide high-quality invisible grills and cloth hangers for homes and apartments across Hyderabad.
+                      Founded with <span className="font-bold text-primary-700">15+ years of experience</span>, Balaji Services began with a clear mission: to provide high-quality home appliances and professional service solutions for homes and businesses across Bangalore.
                     </p>
                   </motion.div>
 
@@ -185,7 +188,7 @@ const About: React.FC = () => {
                   >
                     <div className="absolute -left-2 top-0 w-4 h-4 bg-secondary-500 rounded-full"></div>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      What began as a small team of passionate grill experts has grown into one of Hyderabad's most trusted invisible grill companies, proudly serving over <span className="font-bold text-primary-700">5200+ satisfied customers</span>.
+                      What began as a small team of passionate appliance service experts has grown into one of Bangalore's most trusted home appliance companies, proudly serving over <span className="font-bold text-primary-700">4500+ satisfied customers</span>.
                     </p>
                   </motion.div>
 
@@ -198,7 +201,7 @@ const About: React.FC = () => {
                   >
                     <div className="absolute -left-2 top-0 w-4 h-4 bg-primary-500 rounded-full"></div>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                      Today, we continue to innovate and expand our services while upholding our core commitment to quality, customer satisfaction, and invisible grill excellence.
+                      Today, we continue to expand our service offerings while upholding our core commitment to quality products, expert installation, reliable service, and exceptional customer satisfaction.
                     </p>
                   </motion.div>
                 </div>
@@ -235,7 +238,7 @@ const About: React.FC = () => {
                     <h3 className="text-2xl sm:text-3xl font-bold">Our Mission</h3>
                   </div>
                   <p className="text-base sm:text-lg leading-relaxed text-white/95">
-                    To accelerate the adoption of invisible grill solutions across India by delivering reliable, durable, and comprehensive invisible grills and protection systems.
+                    To be Bangalore's most trusted home appliance service provider by delivering quality products, expert installation, and reliable service for all your appliance needs.
                   </p>
                 </div>
 
@@ -265,7 +268,7 @@ const About: React.FC = () => {
                     <h3 className="text-2xl sm:text-3xl font-bold">Our Vision</h3>
                   </div>
                   <p className="text-base sm:text-lg leading-relaxed text-white/95">
-                    To become a leading invisible grill company in India, driving the nation's commitment to modern home security and aesthetic protection in all sectors.
+                    To become the leading home appliance service provider in Bangalore, making quality appliances and reliable service accessible to every home and business.
                   </p>
                 </div>
 
@@ -599,7 +602,7 @@ const About: React.FC = () => {
               Certifications & <span className="text-accent-400">Standards</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
-              We maintain the highest safety standards and certifications for all our safety nets installations
+              We maintain the highest quality standards and service excellence for all our appliance installations and repairs
             </p>
           </motion.div>
           
@@ -670,7 +673,7 @@ const About: React.FC = () => {
           >
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
               <Shield className="h-5 w-5 text-accent-400 mr-2" />
-              <span className="text-white font-semibold">Certified & Trusted Safety Solutions</span>
+              <span className="text-white font-semibold">Certified & Trusted Appliance Solutions</span>
             </div>
           </motion.div>
         </div>
@@ -709,25 +712,19 @@ const About: React.FC = () => {
               Service <span className="text-primary-700">Areas</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              We proudly serve all areas within Hyderabad and surrounding regions
+              We proudly serve all areas within Bangalore and surrounding regions
             </p>
           </motion.div>
           
           {/* Service Areas Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-6">
-            {['Hyderabad & Secunderabad', 'Banjara Hills & Jubilee Hills', 'Gachibowli & HITEC City', 
-              'Kondapur & Madhapur', 'Begumpet & Somajiguda', 'Ameerpet & Kukatpally',
-              'Miyapur & Bachupally', 'Nizampet & Chandanagar', 'Serilingampally & Manikonda', 
-              'Financial District & Nanakramguda', 'Kokapet & Tellapur', 'Narsingi & Old City', 
-              'Charminar & Mehdipatnam', 'Tolichowki & Malakpet', 'Dilsukhnagar & L.B. Nagar', 
-              'Uppal & Nagole', 'Boduppal & Alwal', 'Malkajgiri & Kapra', 
-              'ECIL & Tarnaka', 'Osmania University & Nallakunta', 
-              'Musheerabad & Kachiguda', 'Abids & Koti', 'Sultan Bazar & Nampally', 
-              'Basheerbagh & Khairatabad', 'Panjagutta & SR Nagar', 
-              'Erragadda & Sanathnagar', 'Balanagar & Patancheru', 'BHEL & IDA', 
-              'Jeedimetla & Qutubullapur', 'Medchal & Shamirpet', 
-              'Gandipet & Shamshabad', 'Rajiv Gandhi International Airport & Cyberabad', 
-              'Raidurg & Gachibowli Stadium'].map((city, index) => (
+            {['Bangalore Central', 'Indiranagar', 'Koramangala', 'Whitefield', 'Electronic City',
+              'MG Road & Brigade Road', 'Marathahalli', 'HSR Layout', 'BTM Layout', 'JP Nagar',
+              'Bannerghatta Road', 'Hosur Road', 'Outer Ring Road', 'Sarjapur Road', 'Bellandur',
+              'KR Puram', 'Hebbal', 'Yelahanka', 'Rajajinagar', 'Vijayanagar',
+              'Malleshwaram', 'Yeshwanthpur', 'Peenya', 'Jalahalli', 'Dasarahalli',
+              'Magadi Road', 'Tumkur Road', 'Nelamangala', 'Devanahalli', 'Bangalore Airport',
+              'Varthur', 'Kadugodi', 'Hoskote', 'Old Airport Road', 'CV Raman Nagar'].map((city, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -787,7 +784,7 @@ const About: React.FC = () => {
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary-50 border border-primary-200">
               <Globe className="h-5 w-5 text-primary-600 mr-2" />
               <span className="text-primary-700 font-semibold text-sm sm:text-base">
-                Serving Hyderabad & Surrounding Regions
+                Serving Bangalore & Surrounding Regions
               </span>
             </div>
           </motion.div>
@@ -846,7 +843,7 @@ const About: React.FC = () => {
                 Ready to Work with <span className="text-accent-400">Us?</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-                Join our growing family of satisfied customers and experience the Taj Safety Nets difference
+                Join our growing family of satisfied customers and experience the Balaji Services difference - quality appliances, expert installation, and reliable service
               </p>
             </motion.div>
 
@@ -860,7 +857,7 @@ const About: React.FC = () => {
             >
               {/* Call Button */}
               <motion.a
-                href="tel:+917893987771"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-gradient-to-r from-accent-500 to-accent-600 text-gray-900 px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl hover:shadow-accent-500/50 overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -878,7 +875,7 @@ const About: React.FC = () => {
 
               {/* WhatsApp Button */}
               <motion.a
-                href="https://wa.me/917893987771"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -927,7 +924,7 @@ const About: React.FC = () => {
               <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                 <Phone className="h-5 w-5 text-accent-400 mr-3" />
                 <span className="text-white font-semibold text-base sm:text-lg">
-                  +91 7893987771
+                  +91 9902730741 / +91 8123288996
                 </span>
               </div>
             </motion.div>

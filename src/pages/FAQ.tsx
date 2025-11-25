@@ -14,7 +14,11 @@ import {
   Sparkles,
   CheckCircle,
   Settings,
-  Award
+  Award,
+  Wrench,
+  Droplets,
+  Sun,
+  Battery
 } from 'lucide-react';
 
 const FAQ: React.FC = () => {
@@ -30,40 +34,82 @@ const FAQ: React.FC = () => {
 
   const faqCategories = [
     {
-      title: "Invisible Grill Installation",
-      icon: <Shield className="h-6 w-6" />,
+      title: "Kitchen Appliances",
+      icon: <Settings className="h-6 w-6" />,
       color: "accent",
       questions: [
         {
-          question: "How long does invisible grill installation take?",
-          answer: "Installation time varies by project size. Simple balcony grills take 2-4 hours, while large apartment complexes may take 1-3 days. We provide accurate timelines during our free consultation."
+          question: "How long does chimney installation take?",
+          answer: "Chimney installation typically takes 2-4 hours depending on the model and kitchen setup. Our certified technicians ensure proper fitting and testing. For hob installation, it takes 1-2 hours, while dishwasher installation can take 2-3 hours including plumbing and electrical connections."
         },
         {
-          question: "What types of invisible grills do you offer?",
-          answer: "We offer comprehensive invisible grill solutions including balcony grills, window grills, apartment grills, stainless steel grills, and custom-designed grills for all types of properties."
+          question: "Do you provide warranty for kitchen appliances?",
+          answer: "Yes, we provide comprehensive warranties on all kitchen appliances. Chimney and hob come with manufacturer warranty plus our service warranty. Dishwasher installation includes warranty on installation work and connections. We also offer extended warranty options for peace of mind."
         },
         {
-          question: "Do you provide custom sizing?",
-          answer: "Yes, we provide custom sizing for all our invisible grill services. Our team takes precise measurements and creates grills tailored to your specific requirements and space constraints."
+          question: "What brands of kitchen appliances do you service?",
+          answer: "We service and install all major brands including Elica, Hindware, Faber, Bosch, IFB, LG, Samsung, Whirlpool, and more. Our technicians are trained to work with various brands and models. We also provide genuine spare parts for repairs and maintenance."
+        },
+        {
+          question: "How often should I service my kitchen chimney?",
+          answer: "We recommend professional chimney service every 6 months for regular use, or every 3-4 months for heavy cooking. Regular servicing includes filter cleaning, motor inspection, and maintenance of auto-clean systems. This ensures optimal performance and longevity of your chimney."
         }
       ]
     },
     {
-      title: "Safety & Quality",
-      icon: <Award className="h-6 w-6" />,
+      title: "Service & Maintenance",
+      icon: <Wrench className="h-6 w-6" />,
       color: "secondary",
       questions: [
         {
-          question: "Are your invisible grills certified and tested?",
-          answer: "Yes, all our invisible grills meet international safety standards and are tested for strength, durability, and weather resistance. We use certified materials and follow strict quality control processes."
+          question: "Do you provide emergency repair services?",
+          answer: "Yes, we offer 24/7 emergency repair services for urgent appliance breakdowns. Our emergency team can respond quickly to address issues with washing machines, geysers, generators, and other critical appliances. Call us anytime for immediate assistance."
         },
         {
-          question: "What materials are used in your invisible grills?",
-          answer: "We use high-quality materials including marine-grade stainless steel cables (316 S.S.), UV-resistant nylon coating, and specialized grill materials. All materials are weather-resistant, durable, and designed for long-term outdoor use."
+          question: "What is included in your appliance service?",
+          answer: "Our comprehensive service includes thorough inspection, cleaning, lubrication of moving parts, replacement of worn components, testing of all functions, and preventive maintenance. We also provide genuine spare parts and detailed service reports. Our technicians are trained and certified."
         },
         {
-          question: "Can invisible grills withstand harsh weather?",
-          answer: "Our invisible grills are designed to withstand various weather conditions including rain, wind, and UV exposure. They're made from weather-resistant materials and are tested for durability in different climates."
+          question: "How much does appliance service cost?",
+          answer: "Service costs vary based on the appliance type and work required. We offer free diagnostic visits, and our service charges are transparent with no hidden costs. Regular maintenance packages are available at discounted rates. Contact us for detailed pricing based on your specific needs."
+        }
+      ]
+    },
+    {
+      title: "Water Solutions",
+      icon: <Droplets className="h-6 w-6" />,
+      color: "primary",
+      questions: [
+        {
+          question: "What types of geysers do you install and service?",
+          answer: "We install and service all types of geysers including storage geysers, instant geysers, solar geysers, and gas geysers. We work with all major brands like AO Smith, Havells, Bajaj, Racold, and more. Our services include installation, repair, maintenance, and replacement."
+        },
+        {
+          question: "What is Aquaguard and why do I need it?",
+          answer: "Aquaguard water purifiers provide clean, safe drinking water by removing impurities, bacteria, viruses, and harmful chemicals. We offer Aquaguard sales and installation services. Regular maintenance ensures optimal filtration and extends the life of your water purifier."
+        },
+        {
+          question: "How often should I service my water purifier?",
+          answer: "Water purifier service is recommended every 6 months for optimal performance. This includes filter replacement, UV lamp checking, RO membrane inspection, and sanitization. Regular service ensures clean, safe drinking water and prevents health issues."
+        }
+      ]
+    },
+    {
+      title: "Power Solutions",
+      icon: <Battery className="h-6 w-6" />,
+      color: "accent",
+      questions: [
+        {
+          question: "What types of generators do you service?",
+          answer: "We service all types of generators including diesel generators, petrol generators, inverter generators, and standby generators. Our services include installation, regular maintenance, repairs, fuel system cleaning, battery replacement, and load testing. We ensure your generator is always ready when you need it."
+        },
+        {
+          question: "How often should I service my generator?",
+          answer: "Generator service should be done every 3-6 months depending on usage. Regular service includes oil change, filter replacement, battery check, fuel system inspection, and load testing. This ensures reliable performance during power cuts and extends the generator's lifespan."
+        },
+        {
+          question: "Do you provide generator installation services?",
+          answer: "Yes, we provide professional generator installation services. Our certified technicians ensure proper installation including electrical connections, exhaust system setup, fuel line connections, and safety compliance. We also provide installation warranty and post-installation support."
         }
       ]
     },
@@ -73,35 +119,20 @@ const FAQ: React.FC = () => {
       color: "primary",
       questions: [
         {
-          question: "What are invisible grills and why do I need them?",
-          answer: "Invisible grills are protective barriers made from high-strength stainless steel cables designed to provide security while maintaining unobstructed views. They're essential for balconies, windows, apartments, and areas where safety and aesthetics are both important."
+          question: "Do you service appliances in Bangalore?",
+          answer: "Yes, we provide appliance installation, service, and repair throughout Bangalore. Our service areas include all major localities in Bangalore. We offer same-day service for urgent repairs and scheduled appointments for installations and regular maintenance."
         },
         {
-          question: "How long do invisible grills last?",
-          answer: "Our high-quality invisible grills typically last 10-15 years depending on usage and environmental conditions. We provide warranties ranging from 5-10 years and offer maintenance services to extend their lifespan."
+          question: "What are your service charges?",
+          answer: "We offer competitive and transparent pricing. Service charges vary based on the appliance type and work required. We provide free diagnosis and quotes before starting any work. No hidden charges - you pay only for the services you need. Contact us for specific pricing."
         },
         {
-          question: "Do invisible grills require maintenance?",
-          answer: "Invisible grills require minimal maintenance. We recommend annual inspections to check for wear, damage, or loose fittings. Our team provides professional maintenance services to ensure optimal performance."
-        }
-      ]
-    },
-    {
-      title: "Cloth Hangers & Support",
-      icon: <Settings className="h-6 w-6" />,
-      color: "accent",
-      questions: [
-        {
-          question: "What types of cloth hangers do you provide?",
-          answer: "We provide various cloth hanger solutions including pull & dry cloth hangers, ceiling cloth hangers, balcony cloth hangers, and custom-designed hanger systems for all your drying needs."
+          question: "Are your technicians certified?",
+          answer: "Yes, all our technicians are certified, trained, and experienced. They undergo regular training to stay updated with the latest appliances and technologies. We ensure quality service, proper installation, and reliable repairs. Your satisfaction and safety are our top priorities."
         },
         {
-          question: "What warranty do you provide?",
-          answer: "We provide comprehensive warranties ranging from 3-5 years depending on the service type. Our warranty covers material defects, workmanship, and includes free repairs or replacement for covered issues."
-        },
-        {
-          question: "Do you offer emergency services?",
-          answer: "Yes, we provide 24/7 emergency support for urgent invisible grill repairs or installations. Our emergency team can respond quickly to ensure your security needs are met immediately."
+          question: "Do you provide genuine spare parts?",
+          answer: "Yes, we use only genuine OEM spare parts for all repairs and replacements. We maintain a stock of commonly required parts for quick service. Using genuine parts ensures optimal performance, maintains warranty, and extends the life of your appliances."
         }
       ]
     }
@@ -111,13 +142,13 @@ const FAQ: React.FC = () => {
     <>
       <Helmet>
         <title>FAQ - Frequently Asked Questions | Balaji Services</title>
-        <meta name="description" content="Frequently asked questions about Balaji Services." />
+        <meta name="description" content="Frequently asked questions about Balaji Services - Appliance installation, service, and repair in Bangalore. Get answers about kitchen appliances, water solutions, solar systems, and generator services." />
         <meta property="og:title" content="FAQ - Frequently Asked Questions | Balaji Services" />
-        <meta property="og:description" content="Frequently asked questions." />
+        <meta property="og:description" content="Get answers about appliance installation, service, and repair in Bangalore. Expert solutions for kitchen appliances, washing machines, geysers, water purifiers, solar systems, and generators." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="FAQ - Frequently Asked Questions | Balaji Services" />
-        <meta name="twitter:description" content="Frequently asked questions." />
+        <meta name="twitter:description" content="Get answers about appliance installation, service, and repair in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>
@@ -125,12 +156,15 @@ const FAQ: React.FC = () => {
       {/* Hero Section - Redesigned */}
       <section className="relative text-white py-10 lg:py-16 overflow-hidden min-h-[40vh] sm:min-h-[50vh] flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/images/safety-nets/invisible-grill-balconies.jpg')`
-        }}></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/services/chimney.webp')`
+          }}
+        ></div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
         
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -164,8 +198,8 @@ const FAQ: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Get answers to common questions about invisible grills, cloth hangers, installation, and maintenance. 
-            Everything you need to know about Balaji Services.
+            Get answers to common questions about appliance installation, service, repair, and maintenance. 
+            Everything you need to know about Balaji Services in Bangalore.
           </motion.p>
         </div>
       </section>
@@ -232,7 +266,12 @@ const FAQ: React.FC = () => {
                   {/* Questions */}
                   <div className="p-6 sm:p-8">
                     {category.questions.map((item, questionIndex) => {
-                      const itemIndex = categoryIndex * 3 + questionIndex;
+                      // Calculate unique index by summing questions in previous categories
+                      let itemIndex = 0;
+                      for (let i = 0; i < categoryIndex; i++) {
+                        itemIndex += faqCategories[i].questions.length;
+                      }
+                      itemIndex += questionIndex;
                       const isOpen = openItems.includes(itemIndex);
                       
                       return (
@@ -324,13 +363,13 @@ const FAQ: React.FC = () => {
               Still Have <span className="text-accent-400">Questions?</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-              Can't find the answer you're looking for? Our invisible grill experts are here to help.
+              Can't find the answer you're looking for? Our appliance service experts are here to help. Contact us for expert advice on installation, repair, and maintenance.
             </p>
             
             {/* Contact Options */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12">
               <motion.a
-                href="tel:+917893987771"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-gradient-to-r from-accent-500 to-accent-600 text-gray-900 px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl hover:shadow-accent-500/50 overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -342,7 +381,7 @@ const FAQ: React.FC = () => {
               </motion.a>
               
               <motion.a
-                href="https://wa.me/917893987771"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}

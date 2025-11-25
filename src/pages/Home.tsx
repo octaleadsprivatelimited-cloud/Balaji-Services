@@ -17,7 +17,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import { openWhatsAppQuote } from '../utils/whatsapp';
-import HeroSlider from '../components/HeroSlider';
+import { getPopularServices } from '../data/services';
 
 const Home: React.FC = () => {
   const { scrollY } = useScroll();
@@ -25,64 +25,63 @@ const Home: React.FC = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0.8]);
   const scale = useTransform(scrollY, [0, 300], [1, 0.95]);
 
-  // Hero slider images
-  const heroImages = [
-    '/images/hero/slider-1.jpg',
-    '/images/hero/slider-2.jpg',
-    '/images/hero/slider-3.jpg'
-  ];
 
   const features = [
     {
       icon: <Shield className="h-12 w-12 text-primary-600" />,
-      title: "Sleek and Aesthetic Design",
-      description: "These grills provide a modern, invisible look, blending seamlessly with your balcony or window"
+      title: "Expert Installation",
+      description: "Professional installation by certified technicians ensuring proper setup and safety"
     },
     {
       icon: <HardHat className="h-12 w-12 text-primary-600" />,
-      title: "Durable and Strong",
-      description: "Made from high-quality, rust-resistant materials like stainless steel, offering long-lasting strength"
+      title: "Quality Products",
+      description: "Top brands and premium quality appliances with warranty coverage and reliable performance"
     },
     {
       icon: <Award className="h-12 w-12 text-accent-600" />,
-      title: "Enhanced Safety",
-      description: "Effectively prevent falls, providing a safe environment for children, pets, and residents"
+      title: "Comprehensive Service",
+      description: "Complete solutions including sales, installation, maintenance, and repair services"
     },
     {
       icon: <CheckCircle className="h-12 w-12 text-secondary-600" />,
-      title: "Quality Guarantee",
-      description: "ISO certified processes and materials with superior craftsmanship"
+      title: "After Sales Support",
+      description: "Dedicated customer support with regular maintenance and emergency repair services"
     }
   ];
 
   const stats = [
-    { number: "5200+", label: "Projects Done", icon: <CheckCircle className="h-6 w-6" /> },
-    { number: "5100+", label: "Happy Clients", icon: <Users className="h-6 w-6" /> },
-    { number: "40+", label: "Expert Staffs", icon: <TrendingUp className="h-6 w-6" /> },
-    { number: "25+", label: "Years Experience", icon: <Globe className="h-6 w-6" /> }
+    { number: "5000+", label: "Appliances Installed", icon: <CheckCircle className="h-6 w-6" /> },
+    { number: "4500+", label: "Happy Customers", icon: <Users className="h-6 w-6" /> },
+    { number: "10+", label: "Service Categories", icon: <TrendingUp className="h-6 w-6" /> },
+    { number: "15+", label: "Years Experience", icon: <Globe className="h-6 w-6" /> }
   ];
 
   return (
     <>
       <Helmet>
         <title>Balaji Services</title>
-        <meta name="description" content="Balaji Services - Professional service business in Hyderabad." />
+        <meta name="description" content="Balaji Services - Professional home appliance sales and service in Bangalore. Chimney, Hob, Micro Oven, Washing Machine, Geyser, Aquaguard, Solar, Generator installation and repair services." />
         <meta property="og:title" content="Balaji Services" />
-        <meta property="og:description" content="Professional service business in Hyderabad." />
+        <meta property="og:description" content="Professional service business in Bangalore." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Balaji Services" />
-        <meta name="twitter:description" content="Professional service business in Hyderabad." />
+        <meta name="twitter:description" content="Professional service business in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>
       <div className="pt-16">
-      {/* Hero Section with Slider Background */}
+      {/* Hero Section with Background Image */}
       <motion.section 
         className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white min-h-[60vh] sm:min-h-[70vh] flex items-center overflow-hidden"
       >
-            {/* Hero Slider Background */}
-            <HeroSlider images={heroImages} interval={3000} />
+            {/* Hero Background Image */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('/images/hero/hero.jpg')`
+              }}
+            ></div>
         
         {/* Strong Black Overlay for Text Readability */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
@@ -133,8 +132,8 @@ const Home: React.FC = () => {
                       transition: { duration: 0.8 }
                     }}
                   >
-                Invisible Grills & 
-                  <span className="text-accent-400 font-semibold"> Cloth Hangers</span>
+                Home Appliances & 
+                  <span className="text-accent-400 font-semibold"> Services</span>
               </motion.h1>
               
               {/* Company Tagline with Moving Background Effect */}
@@ -153,7 +152,7 @@ const Home: React.FC = () => {
                         transition: { duration: 0.8 }
                       }}
                     >
-                  THE LEADING INVISIBLE GRILL MANUFACTURERS AND INSTALLERS
+                  THE LEADING HOME APPLIANCE SALES AND SERVICE PROVIDERS
                 </motion.div>
                 <motion.div
                   className="text-base sm:text-lg lg:text-xl text-gray-200 mt-1 sm:mt-2"
@@ -169,7 +168,7 @@ const Home: React.FC = () => {
                     transition: { duration: 0.8 }
                   }}
                 >
-                  Professional Invisible Grill Installation & Cloth Hanger Solutions
+                  Professional Appliance Installation, Sales & Service Solutions
                 </motion.div>
               </div>
               
@@ -221,7 +220,7 @@ const Home: React.FC = () => {
         </div>
       </motion.section>
 
-          {/* Invisible Grills Applications Showcase */}
+          {/* Home Appliances Showcase */}
           <motion.section 
             className="py-20 bg-gradient-to-br from-primary-50 to-secondary-50"
             initial={{ opacity: 0 }}
@@ -241,7 +240,7 @@ const Home: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Our Premium Invisible Grill Solutions
+              Our Premium Home Appliance Services
             </motion.h2>
             <motion.p 
               className="text-xl text-gray-600 max-w-3xl mx-auto"
@@ -249,112 +248,34 @@ const Home: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transform your home with our premium invisible grills and cloth hangers - perfect for balconies, windows, apartments, and modern living spaces
+              Your one-stop solution for all home appliance needs - Kitchen (Chimney, Hob, Micro Oven, Cooking Range), Laundry (Washing Machine), Water Solutions (Geyser, Aquaguard), Solar Power, and Generator Services. Expert installation, reliable service, and genuine parts guaranteed.
             </motion.p>
           </motion.div>
           
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
-            {/* Invisible Grill for Balconies */}
-            <Link to="/services/invisible-grill-for-balconies">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-gradient-to-br from-white to-primary-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              >
-                <div className="h-32 sm:h-40 md:h-48 bg-cover bg-center bg-no-repeat relative overflow-hidden">
-                  {/* Invisible Grill for Balconies Image */}
-                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-                    backgroundImage: `url('/images/safety-nets/invisible-grill-balconies.jpg')`
-                  }}></div>
-                  
-                  {/* Dark Overlay for better text visibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40"></div>
-                  
-                  <div className="text-center text-white relative z-10 h-full flex flex-col items-center justify-center px-2">
-                    <h3 className="text-sm sm:text-base md:text-xl font-semibold drop-shadow-lg group-hover:scale-110 transition-transform duration-300" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Balcony Grills</h3>
-                    <p className="text-xs sm:text-sm opacity-90 drop-shadow-lg" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Premium invisible</p>
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+            {getPopularServices().slice(0, 5).map((service, index) => (
+              <Link key={service.id} to={`/services/${service.slug}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-gradient-to-br from-white to-primary-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
+                >
+                  <div className="h-32 sm:h-40 md:h-48 bg-cover bg-center bg-no-repeat relative overflow-hidden">
+                    <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+                      backgroundImage: `url('${service.image}')`,
+                      backgroundColor: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+                    }}></div>
+                    
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40"></div>
+                    
+                    <div className="text-center text-white relative z-10 h-full flex flex-col items-center justify-center px-2">
+                      <h3 className="text-xs sm:text-sm md:text-base font-semibold drop-shadow-lg group-hover:scale-110 transition-transform duration-300" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>{service.name}</h3>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            </Link>
-
-            {/* Invisible Grill for Windows */}
-            <Link to="/services/invisible-grill-for-windows">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-gradient-to-br from-white to-primary-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              >
-                <div className="h-32 sm:h-40 md:h-48 bg-cover bg-center bg-no-repeat relative overflow-hidden">
-                  {/* Invisible Grill for Windows Image */}
-                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-                    backgroundImage: `url('/images/safety-nets/invisible-grill-windows.jpg')`,
-                    backgroundPosition: 'center 30%'
-                  }}></div>
-                  
-                  {/* Dark Overlay for better text visibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40"></div>
-                  
-                  <div className="text-center text-white relative z-10 h-full flex flex-col items-center justify-center px-2">
-                    <h3 className="text-sm sm:text-base md:text-xl font-semibold drop-shadow-lg group-hover:scale-110 transition-transform duration-300" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Window Grills</h3>
-                    <p className="text-xs sm:text-sm opacity-90 drop-shadow-lg" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Elegant security</p>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-
-            {/* Pull & Dry Cloth Hangers */}
-            <Link to="/services/pull-dry-cloth-hangers">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-gradient-to-br from-white to-primary-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              >
-                <div className="h-32 sm:h-40 md:h-48 bg-cover bg-center bg-no-repeat relative overflow-hidden">
-                  {/* Pull & Dry Cloth Hangers Image */}
-                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-                    backgroundImage: `url('/images/safety-nets/pull-dry-cloth-hangers.jpg')`
-                  }}></div>
-                  
-                  {/* Dark Overlay for better text visibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40"></div>
-                  
-                  <div className="text-center text-white relative z-10 h-full flex flex-col items-center justify-center px-2">
-                    <h3 className="text-sm sm:text-base md:text-xl font-semibold drop-shadow-lg group-hover:scale-110 transition-transform duration-300" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Pull & Dry Hangers</h3>
-                    <p className="text-xs sm:text-sm opacity-90 drop-shadow-lg" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Space-saving</p>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-
-            {/* Ceiling Cloth Hangers */}
-            <Link to="/services/ceiling-cloth-hangers">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-gradient-to-br from-white to-primary-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer"
-              >
-                <div className="h-32 sm:h-40 md:h-48 bg-cover bg-center bg-no-repeat relative overflow-hidden">
-                  {/* Ceiling Cloth Hangers Image */}
-                  <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-                    backgroundImage: `url('/images/safety-nets/ceiling-cloth-hangers.jpg')`
-                  }}></div>
-                  
-                  {/* Dark Overlay for better text visibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40"></div>
-                  
-                  <div className="text-center text-white relative z-10 h-full flex flex-col items-center justify-center px-2">
-                    <h3 className="text-sm sm:text-base md:text-xl font-semibold drop-shadow-lg group-hover:scale-110 transition-transform duration-300" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Ceiling Hangers</h3>
-                    <p className="text-xs sm:text-sm opacity-90 drop-shadow-lg" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8)'}}>Ceiling-mounted</p>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
-
+                </motion.div>
+              </Link>
+            ))}
           </div>
           
           {/* View More Services Button */}
@@ -409,7 +330,7 @@ const Home: React.FC = () => {
                   Why Choose <span className="text-primary-700">Balaji Services?</span>
                 </h2>
                 <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                  We provide comprehensive invisible grill and cloth hanger solutions with unmatched quality and service - from balconies to windows, apartments, and modern living spaces across Hyderabad
+                  Your trusted partner for premium home appliances in Bangalore. We offer sales, installation, and comprehensive service for Chimney, Hob, Micro Oven, Dishwasher, Washing Machine, Cooking Range, Geyser, Aquaguard, Solar Solutions, and Generator services. Professional technicians, genuine parts, and timely service guaranteed.
                 </p>
               </motion.div>
 
@@ -480,7 +401,7 @@ const Home: React.FC = () => {
                   Our Achievements
                 </h2>
                 <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                  Trusted by thousands of satisfied customers across Hyderabad
+                  Trusted by thousands of satisfied customers across Bangalore
                 </p>
               </motion.div>
 
@@ -578,7 +499,7 @@ const Home: React.FC = () => {
               className="inline-block mb-6"
             >
               <span className="inline-flex items-center px-4 py-2 rounded-full bg-accent-500/20 border border-accent-400/30 text-accent-300 text-sm font-semibold backdrop-blur-sm">
-                <Shield className="h-4 w-4 mr-2" />
+                <Award className="h-4 w-4 mr-2" />
                 Get Started Today
               </span>
             </motion.div>
@@ -591,7 +512,7 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              Ready to Ensure <span className="text-accent-400">Safety?</span>
+              Ready to Upgrade Your <span className="text-accent-400">Home?</span>
             </motion.h2>
 
             {/* Description */}
@@ -602,7 +523,7 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               className="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
             >
-              We are proud to serve customers across Hyderabad who have embraced the benefits of safety nets. Join the growing community that has already secured their premises with our protection solutions.
+              Transform your home with premium appliances from Balaji Services. From kitchen essentials like chimneys, hobs, and microwaves to washing machines, geysers, and solar solutions - we provide complete sales, installation, and service support. Get expert installation and reliable after-sales service for all your home appliance needs in Bangalore.
             </motion.p>
 
             {/* CTA Buttons Grid */}
@@ -615,11 +536,13 @@ const Home: React.FC = () => {
             >
               {/* Call Button */}
               <motion.a
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-accent-500/50 flex items-center justify-center min-w-[200px]"
               >
                 <Phone className="mr-2 h-5 w-5 group-hover:animate-pulse" />
+                Call Now
                 <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.a>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white mb-2">Balaji Services</h3>
               <p className="text-sm text-gray-300 leading-relaxed">
-                Professional service business in Hyderabad.
+                Professional service business in Bangalore.
               </p>
             </div>
 
@@ -35,12 +35,12 @@ const Footer: React.FC = () => {
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-white">Services</h3>
                 <ul className="space-y-2 text-sm">
-                  <li><Link to="/services/invisible-grill-for-balconies" className="text-gray-300 hover:text-accent-400 transition-colors">Invisible Grill for Balconies</Link></li>
-                  <li><Link to="/services/invisible-grill-for-windows" className="text-gray-300 hover:text-accent-400 transition-colors">Invisible Grill for Windows</Link></li>
-                  <li><Link to="/services/invisible-grill-for-apartments" className="text-gray-300 hover:text-accent-400 transition-colors">Invisible Grill for Apartments</Link></li>
-                  <li><Link to="/services/pull-dry-cloth-hangers" className="text-gray-300 hover:text-accent-400 transition-colors">Pull & Dry Cloth Hangers</Link></li>
-                  <li><Link to="/services/ceiling-cloth-hangers" className="text-gray-300 hover:text-accent-400 transition-colors">Ceiling Cloth Hangers</Link></li>
-                  <li><Link to="/services/pull-dry-cloth-hangers-for-balconies" className="text-gray-300 hover:text-accent-400 transition-colors">Pull & Dry Cloth Hangers for Balconies</Link></li>
+                  <li><Link to="/services/chimney" className="text-gray-300 hover:text-accent-400 transition-colors">Chimney</Link></li>
+                  <li><Link to="/services/hob" className="text-gray-300 hover:text-accent-400 transition-colors">Hob</Link></li>
+                  <li><Link to="/services/micro-oven" className="text-gray-300 hover:text-accent-400 transition-colors">Micro Oven</Link></li>
+                  <li><Link to="/services/washing-machine" className="text-gray-300 hover:text-accent-400 transition-colors">Washing Machine</Link></li>
+                  <li><Link to="/services/geyser" className="text-gray-300 hover:text-accent-400 transition-colors">Geyser</Link></li>
+                  <li><Link to="/services" className="text-gray-300 hover:text-accent-400 transition-colors">View All Services</Link></li>
                 </ul>
               </div>
             </div>
@@ -57,10 +57,17 @@ const Footer: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
+                  <Mail className="h-4 w-4 text-accent-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-gray-300 font-semibold">shreebalajiserviceblr@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
                   <MapPin className="h-4 w-4 text-accent-500 mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="text-gray-300">Venkateswara Nagar, Vivekananda Nagar</p>
-                    <p className="text-gray-400 text-xs">Hyderabad-500072</p>
+                    <p className="text-gray-300">No. 754, Ground Floor, 1st B Cross</p>
+                    <p className="text-gray-300">Muthyalamma Nagar</p>
+                    <p className="text-gray-400 text-xs">Bangalore -560054</p>
                   </div>
                 </div>
               </div>
@@ -73,7 +80,15 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-400">
-                © 2024 Balaji Services. All rights reserved.
+                © 2024 Balaji Services. All rights reserved. | Developed by{' '}
+                <a 
+                  href="https://octaleads.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-accent-400 hover:text-accent-500 transition-colors"
+                >
+                  Octaleads
+                </a>
               </p>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">

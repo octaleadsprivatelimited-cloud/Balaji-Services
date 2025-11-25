@@ -60,58 +60,59 @@ const Contact: React.FC = () => {
       color: "accent"
     },
     {
+      icon: <Mail className="h-6 w-6" />,
+      title: "Email",
+      details: ["shreebalajiserviceblr@gmail.com"],
+      action: "mailto:shreebalajiserviceblr@gmail.com",
+      color: "secondary"
+    },
+    {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
-      details: ["Venkateswara Nagar, Vivekananda Nagar", "Hyderabad-500072"],
+      details: ["No. 754, Ground Floor, 1st B Cross", "Muthyalamma Nagar", "Bangalore -560054"],
       action: "#",
       color: "primary"
     }
   ];
 
   const cities = [
-    'Hyderabad & Secunderabad', 'Banjara Hills & Jubilee Hills', 'Gachibowli & HITEC City', 
-    'Kondapur & Madhapur', 'Begumpet & Somajiguda', 'Ameerpet & Kukatpally',
-    'Miyapur & Bachupally', 'Nizampet & Chandanagar', 'Serilingampally & Rajendra Nagar',
-    'Attapur & Manikonda', 'Financial District & Nanakramguda', 'Kokapet & Tellapur',
-    'Narsingi & Old City', 'Charminar & Mehdipatnam', 'Tolichowki & Malakpet',
-    'Dilsukhnagar & L.B. Nagar', 'Uppal & Nagole', 'Boduppal & Alwal',
-    'Malkajgiri & Kapra', 'ECIL & Tarnaka', 'Osmania University & Nallakunta',
-    'Musheerabad & Kachiguda', 'Abids & Koti', 'Sultan Bazar & Nampally',
-    'Basheerbagh & Khairatabad', 'Panjagutta & SR Nagar', 'Erragadda & Sanathnagar',
-    'Balanagar & Patancheru', 'BHEL & IDA', 'Jeedimetla & Qutubullapur',
-    'Medchal & Shamirpet', 'Gandipet & Shamshabad', 'Rajiv Gandhi International Airport',
-    'Cyberabad & Raidurg', 'Gachibowli Stadium'
+    'Bangalore Central', 'Indiranagar', 'Koramangala', 'Whitefield', 'Electronic City',
+    'MG Road & Brigade Road', 'Marathahalli', 'HSR Layout', 'BTM Layout', 'JP Nagar',
+    'Bannerghatta Road', 'Hosur Road', 'Outer Ring Road', 'Sarjapur Road', 'Bellandur',
+    'KR Puram', 'Hebbal', 'Yelahanka', 'Rajajinagar', 'Vijayanagar',
+    'Malleshwaram', 'Yeshwanthpur', 'Peenya', 'Jalahalli', 'Dasarahalli',
+    'Magadi Road', 'Tumkur Road', 'Nelamangala', 'Devanahalli', 'Bangalore Airport',
+    'Varthur', 'Kadugodi', 'Hoskote', 'Old Airport Road', 'CV Raman Nagar'
   ];
 
   const serviceTypes = [
-    'Invisible Grill for Balconies',
-    'Invisible Grill for Windows',
-    'Invisible Grill for Apartments',
-    'Pull & Dry Cloth Hangers',
-    'Ceiling Cloth Hangers',
-    'Pull & Dry Cloth Hangers for Balconies',
-    'Invisible Grill Dealers',
-    'Invisible Grill Fixing Charges',
-    'Invisible Grill for Balcony Near Me',
-    'Invisible Grill for Balcony Price',
-    'Invisible Grill for Child Safety',
-    'Invisible Grill Manufacturer',
-    'Stainless Steel Invisible Grill',
-    'Pull & Dry Cloth Hangers Fixing',
-    'Pull & Dry Cloth Hangers Installation'
+    'Chimney Installation & Service',
+    'Hob Installation & Service',
+    'Micro Oven Service',
+    'Dishwasher Service',
+    'Supreme Solar Sales',
+    'Washing Machine Service',
+    'Cooking Range Service',
+    'Geyser Installation & Service',
+    'Aquaguard Sales & Service',
+    'Generator Service',
+    'Appliance Repair',
+    'Appliance Installation',
+    'Annual Maintenance Contract',
+    'Emergency Service'
   ];
 
   return (
     <>
       <Helmet>
         <title>Contact Us | Balaji Services</title>
-        <meta name="description" content="Contact Balaji Services for professional service business. Call +91 9902730741 or +91 8123288996." />
+        <meta name="description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore. Call +91 9902730741 or +91 8123288996. Expert service for chimney, hob, washing machine, geyser, and more." />
         <meta property="og:title" content="Contact Us | Balaji Services" />
-        <meta property="og:description" content="Contact Balaji Services for professional service business." />
+        <meta property="og:description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore. Expert solutions for all your home appliances." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Contact Us | Balaji Services" />
-        <meta name="twitter:description" content="Contact Balaji Services for professional service business." />
+        <meta name="twitter:description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>
@@ -119,12 +120,15 @@ const Contact: React.FC = () => {
       {/* Hero Section - Redesigned */}
       <section className="relative text-white py-10 lg:py-16 overflow-hidden min-h-[40vh] sm:min-h-[50vh] flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/images/safety-nets/slider-7-3.jpg')`
-        }}></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/services/chimney.webp')`
+          }}
+        ></div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
         
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -158,8 +162,8 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Get in touch with our invisible grill experts for a free consultation and quote. 
-            We're here to help you secure your home with style!
+            Get in touch with our appliance service experts for a free consultation and quote. 
+            We're here to help you with professional appliance installation, service, and repair!
           </motion.p>
         </div>
       </section>
@@ -278,7 +282,7 @@ const Contact: React.FC = () => {
                   Get Your Free <span className="text-primary-700">Quote</span>
                 </h2>
                 <p className="text-gray-600 text-base sm:text-lg">
-                  Fill out the form below and our invisible grill experts will get back to you within 24 hours 
+                  Fill out the form below and our appliance service experts will get back to you within 24 hours 
                   with a customized quote and consultation.
                 </p>
               </div>
@@ -292,7 +296,7 @@ const Contact: React.FC = () => {
                     className="bg-gradient-to-r from-secondary-50 to-secondary-100 border-2 border-secondary-200 text-secondary-800 px-6 py-4 rounded-xl mb-6 flex items-center shadow-lg"
                   >
                     <CheckCircle className="h-6 w-6 mr-3 flex-shrink-0" />
-                    <p className="font-semibold">Thank you! We'll contact you soon with your invisible grill quote.</p>
+                    <p className="font-semibold">Thank you! We'll contact you soon with your appliance service quote.</p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -436,15 +440,15 @@ const Contact: React.FC = () => {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Customized safety solutions</span>
+                    <span>Expert appliance solutions</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Quality assured materials</span>
+                    <span>Genuine parts guarantee</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>5+ year warranty on installations</span>
+                    <span>Warranty on service & installation</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
@@ -486,10 +490,10 @@ const Contact: React.FC = () => {
               </span>
             </motion.div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              Service Areas Across <span className="text-accent-400">India</span>
+              Service Areas Across <span className="text-accent-400">Bangalore</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-              We provide safety nets installation services across these major cities
+              We provide appliance installation, service, and repair across all areas of Bangalore
             </p>
           </motion.div>
           
@@ -513,7 +517,7 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Get Started Section - Redesigned */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-accent-500 via-accent-600 to-accent-500 relative overflow-hidden">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-10 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
@@ -558,11 +562,11 @@ const Contact: React.FC = () => {
               </span>
             </motion.div>
             
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-gray-900">
-              Ready to Ensure <span className="text-white">Safety?</span>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-white">
+              Ready to Upgrade Your <span className="text-accent-400">Home?</span>
             </h2>
-            <p className="text-lg sm:text-xl text-gray-800 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-              Don't wait! Contact us today for a free consultation and start protecting your premises with our safety solutions
+            <p className="text-lg sm:text-xl text-gray-200 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed font-medium">
+              Don't wait! Contact us today for a free consultation and get professional appliance installation, service, and repair solutions
             </p>
 
             {/* Trust Indicators */}
@@ -571,7 +575,7 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 max-w-4xl mx-auto"
+              className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8 max-w-4xl mx-auto"
             >
               <div className="flex flex-col items-center p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-3">
@@ -599,13 +603,13 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-6 sm:mb-8"
             >
               <motion.a
-                href="tel:+917893987771"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative bg-gray-900 hover:bg-gray-800 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl overflow-hidden min-w-[200px] sm:min-w-[240px]"
+                className="group relative bg-white hover:bg-gray-100 text-primary-700 px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl overflow-hidden min-w-[200px] sm:min-w-[240px]"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 <span>Call Now</span>
@@ -615,7 +619,7 @@ const Contact: React.FC = () => {
               </motion.a>
               
               <motion.a
-                href="https://wa.me/917893987771"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -634,22 +638,22 @@ const Contact: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-gray-800 mb-8 sm:mb-12"
+              className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-gray-200 mb-6 sm:mb-8"
             >
               <div className="flex items-center">
-                <Phone className="h-5 w-5 text-gray-900 mr-2" />
+                <Phone className="h-5 w-5 text-white mr-2" />
                 <div>
-                  <span className="text-sm sm:text-base font-semibold">+91 7893987771</span>
-                  <p className="text-xs text-gray-600">Taj Safety Nets</p>
+                  <span className="text-sm sm:text-base font-semibold text-white">+91 9902730741</span>
+                  <p className="text-xs text-gray-300">Balaji Services</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <MessageCircle className="h-5 w-5 text-gray-900 mr-2" />
-                <span className="text-sm sm:text-base font-semibold">WhatsApp Available</span>
+                <MessageCircle className="h-5 w-5 text-white mr-2" />
+                <span className="text-sm sm:text-base font-semibold text-white">WhatsApp Available</span>
               </div>
               <div className="flex items-center">
-                <Clock className="h-5 w-5 text-gray-900 mr-2" />
-                <span className="text-sm sm:text-base font-semibold">24/7 Support</span>
+                <Clock className="h-5 w-5 text-white mr-2" />
+                <span className="text-sm sm:text-base font-semibold text-white">24/7 Support</span>
               </div>
             </motion.div>
 
@@ -663,7 +667,7 @@ const Contact: React.FC = () => {
             >
               <Star className="h-5 w-5 text-white mr-2 fill-white" />
               <span className="text-white font-semibold text-sm sm:text-base">
-                Trusted by 5200+ Happy Customers
+                Trusted by 4500+ Happy Customers
               </span>
             </motion.div>
           </motion.div>

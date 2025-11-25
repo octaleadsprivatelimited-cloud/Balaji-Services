@@ -21,423 +21,683 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: "invisible-grill-for-balconies",
-    name: "Invisible Grill for Balconies",
-    slug: "invisible-grill-for-balconies",
-    description: "Premium invisible grills designed specifically for balconies, providing maximum security while maintaining unobstructed views. Our stainless steel grills are available in multiple wire thicknesses (2mm, 2.5mm, 3mm, 3.5mm, and 4mm) to suit your specific safety needs and budget. These nearly invisible cables blend seamlessly with modern architecture, protecting your loved ones without compromising your view.",
-    shortDescription: "Premium invisible grills for balconies - Available in 2mm to 4mm wire sizes",
+    id: "chimney",
+    name: "Chimney",
+    slug: "chimney",
+    description: "Professional chimney installation, service, and repair for your kitchen. We offer top-quality chimney solutions to keep your kitchen smoke-free and fresh. Expert installation by certified technicians with comprehensive warranty support.",
+    shortDescription: "Professional chimney installation, service, and repair solutions",
     features: [
-      "Available in 5 wire sizes: 2mm, 2.5mm, 3mm, 3.5mm, 4mm",
-      "High-grade stainless steel cables",
-      "Nearly invisible - maintains your view",
-      "Weather & rust resistant",
-      "Professional installation included",
-      "Customized to fit any balcony size",
-      "10+ years durability",
-      "Child & pet safe design"
+      "Auto-clean technology",
+      "Powerful suction capacity",
+      "Multiple filter options",
+      "Energy-efficient models",
+      "LED lighting included",
+      "Touch control panels",
+      "Stainless steel construction",
+      "Professional installation"
     ],
     applications: [
-      "Residential balconies",
-      "Apartment balconies",
-      "High-rise buildings",
-      "Modern homes",
-      "Commercial balconies",
-      "Penthouse terraces",
-      "Duplex balconies",
-      "Villa balconies"
+      "Residential kitchens",
+      "Commercial kitchens",
+      "Restaurants",
+      "Hotels",
+      "Catering services",
+      "Modular kitchens",
+      "Open kitchens",
+      "Compact kitchens"
     ],
     benefits: [
-      "Maximum security protection",
-      "Unobstructed views",
-      "Modern aesthetic appeal",
-      "Child and pet safety",
-      "Weather protection",
-      "Low maintenance",
-      "Long-lasting durability",
-      "Value addition to property"
+      "Removes smoke and odors",
+      "Clean kitchen environment",
+      "Improved air quality",
+      "Energy savings",
+      "Easy maintenance",
+      "Modern appearance",
+      "Long-lasting performance",
+      "Value for money"
     ],
     materials: [
-      "Grade 316 marine-grade stainless steel wires",
-      "Wire thickness options: 2mm, 2.5mm, 3mm, 3.5mm, 4mm",
-      "High-tensile strength cables (can hold 150+ kg)",
-      "Corrosion-resistant mounting hardware",
-      "UV-resistant protective coating",
-      "Premium aluminum/steel mounting brackets"
+      "Premium stainless steel",
+      "High-quality filters",
+      "Advanced motor technology",
+      "LED lighting systems",
+      "Touch control panels",
+      "Durable mounting brackets"
     ],
     installation: [
-      "Site assessment and measurement",
-      "Custom grill sizing",
+      "Site inspection",
+      "Measurement and planning",
       "Professional installation",
-      "Quality inspection",
-      "Safety testing"
+      "Quality testing",
+      "Final inspection"
     ],
     maintenance: [
-      "Regular cleaning with water",
-      "Inspection for wear and tear",
-      "Lubrication of moving parts",
-      "Annual maintenance check",
-      "Emergency repair services"
+      "Regular cleaning service",
+      "Filter replacement",
+      "Motor servicing",
+      "Annual maintenance",
+      "Emergency repairs"
     ],
-    warranty: "5 years warranty on materials and workmanship",
-    image: "/images/safety-nets/invisible-grill-balconies.jpg",
-    heroImage: "/images/safety-nets/invisible-grill-balconies.jpg",
+    warranty: "1-2 years warranty on installation and parts",
+    image: "/images/services/chimney.webp",
+    heroImage: "/images/services/chimney.webp",
     gallery: [
-      "/images/safety-nets/invisible-grill-balconies.jpg",
-      "/images/safety-nets/invisible-grill-windows.jpg",
-      "/images/safety-nets/invisible-grill-apartments.webp"
+      "/images/services/chimney.webp"
     ],
-    priceRange: "₹80-120 per sq ft",
-    category: "Invisible Grills",
+    priceRange: "Contact for pricing",
+    category: "Kitchen Appliances",
     popular: true
   },
   {
-    id: "invisible-grill-for-windows",
-    name: "Invisible Grill for Windows",
-    slug: "invisible-grill-for-windows",
-    description: "Elegant invisible grills for windows that provide security without blocking natural light or views. Choose from 5 wire thickness options (2mm, 2.5mm, 3mm, 3.5mm, and 4mm) based on your window size and security requirements. These transparent grills are perfect for modern homes where aesthetics and safety go hand in hand - you get full protection without the cage-like appearance of traditional grills.",
-    shortDescription: "Elegant window grills - Available in 2mm to 4mm wire thickness options",
+    id: "hob",
+    name: "Hob",
+    slug: "hob",
+    description: "Premium hob installation and service solutions. We provide high-quality gas hobs and induction hobs with professional installation and maintenance services. Choose from various sizes and configurations to match your kitchen needs.",
+    shortDescription: "Premium hob installation and service for modern kitchens",
     features: [
-      "5 wire size options: 2mm, 2.5mm, 3mm, 3.5mm, 4mm",
-      "Nearly invisible - no obstruction to views",
-      "Allows 100% natural light & air flow",
-      "Rust-proof stainless steel construction",
-      "Custom fit for any window size",
-      "Easy to clean & maintain",
-      "Modern aesthetic appeal",
-      "Strong security without bulky look"
+      "Gas and induction options",
+      "Multiple burner configurations",
+      "Auto-ignition system",
+      "Safety flame failure device",
+      "Easy-to-clean surfaces",
+      "Efficient heating",
+      "Modern design",
+      "Professional installation"
     ],
     applications: [
-      "Bedroom windows",
-      "Living room windows",
-      "Kitchen windows",
-      "Bathroom windows",
-      "Office windows",
-      "Commercial windows",
-      "High-rise windows",
-      "Ground floor windows"
+      "Home kitchens",
+      "Modular kitchens",
+      "Commercial kitchens",
+      "Restaurants",
+      "Catering units",
+      "Hotels",
+      "Residential complexes",
+      "Villas"
     ],
     benefits: [
-      "Unobstructed views",
-      "Natural light passage",
-      "Enhanced security",
+      "Quick and efficient cooking",
+      "Energy efficient",
+      "Easy to use",
+      "Safe operation",
       "Modern appearance",
-      "Easy maintenance",
-      "Weather protection",
-      "Child safety",
-      "Property value increase"
+      "Long-lasting",
+      "Low maintenance",
+      "Warranty protection"
     ],
     materials: [
-      "Grade 316 marine-grade stainless steel wires",
-      "Wire thickness: 2mm, 2.5mm, 3mm, 3.5mm, 4mm",
-      "High-tensile strength cables (holds 150+ kg)",
-      "Anti-corrosion mounting brackets",
-      "Weather & UV resistant coating",
-      "Premium mounting hardware"
+      "Stainless steel construction",
+      "Tempered glass tops",
+      "Premium burners",
+      "Safety valves",
+      "Quality knobs",
+      "Durable frames"
     ],
     installation: [
-      "Window measurement",
-      "Custom grill fabrication",
+      "Kitchen assessment",
+      "Gas connection setup",
       "Professional installation",
-      "Quality inspection",
-      "Safety verification"
+      "Safety testing",
+      "Quality check"
     ],
     maintenance: [
       "Regular cleaning",
-      "Inspection for damage",
-      "Hardware maintenance",
-      "Annual service check",
-      "Emergency repairs"
+      "Burner servicing",
+      "Gas leak checking",
+      "Annual maintenance",
+      "Repair services"
     ],
-    warranty: "5 years warranty on materials and workmanship",
-    image: "/images/safety-nets/invisible-grill-windows.jpg",
-    heroImage: "/images/safety-nets/invisible-grill-windows.jpg",
+    warranty: "1-2 years warranty on installation and parts",
+    image: "/images/services/hob.jpg",
+    heroImage: "/images/services/hob.jpg",
     gallery: [
-      "/images/safety-nets/invisible-grill-windows.jpg",
-      "/images/safety-nets/invisible-grill-balconies.jpg",
-      "/images/safety-nets/invisible-grill-apartments.webp"
+      "/images/services/hob.jpg"
     ],
-    priceRange: "₹70-100 per sq ft",
-    category: "Invisible Grills",
+    priceRange: "Contact for pricing",
+    category: "Kitchen Appliances",
     popular: true
   },
   {
-    id: "invisible-grill-for-apartments",
-    name: "Invisible Grill for Apartments",
-    slug: "invisible-grill-for-apartments",
-    description: "Complete invisible grill solutions for apartment buildings and high-rise complexes. Available in 5 different wire thicknesses (2mm, 2.5mm, 3mm, 3.5mm, and 4mm) to meet various safety requirements and budgets. Our grills provide comprehensive security for all your windows and balconies while maintaining the modern aesthetic of apartment living. Perfect for protecting children and pets in high-rise buildings.",
-    shortDescription: "Complete apartment grill solutions - 2mm to 4mm wire sizes available",
+    id: "micro-oven",
+    name: "Micro Oven",
+    slug: "micro-oven",
+    description: "Microwave oven installation, service, and repair solutions. We offer a wide range of microwave ovens from top brands with professional installation and comprehensive after-sales support. Keep your kitchen equipped with the latest technology.",
+    shortDescription: "Microwave oven installation, service, and repair solutions",
     features: [
-      "Multiple wire sizes: 2mm, 2.5mm, 3mm, 3.5mm, 4mm",
-      "Bulk installation for entire apartment",
-      "Uniform look across all windows & balconies",
-      "Rust & weather resistant",
-      "Professional team installation",
-      "Customized for each opening",
-      "High-strength stainless steel",
-      "Child & pet safety certified"
+      "Multiple capacity options",
+      "Auto-cook programs",
+      "Defrost function",
+      "Grill and convection modes",
+      "Child lock safety",
+      "Digital display",
+      "Easy-to-clean interior",
+      "Professional installation"
     ],
     applications: [
-      "Apartment balconies",
-      "Apartment windows",
-      "High-rise buildings",
+      "Home kitchens",
+      "Office pantries",
+      "Hostels",
+      "Hotels",
+      "Restaurants",
+      "Commercial spaces",
       "Residential complexes",
-      "Penthouse terraces",
-      "Duplex apartments",
-      "Studio apartments",
-      "Commercial apartments"
+      "Studio apartments"
     ],
     benefits: [
-      "Comprehensive security",
-      "Modern appearance",
-      "Bulk installation discounts",
-      "Consistent quality",
-      "Easy maintenance",
-      "Weather protection",
-      "Child safety",
-      "Property enhancement"
+      "Quick cooking and heating",
+      "Energy efficient",
+      "Versatile cooking options",
+      "Easy to operate",
+      "Space-saving design",
+      "Modern features",
+      "Reliable performance",
+      "Warranty coverage"
     ],
     materials: [
-      "Grade 316 marine-grade stainless steel wires",
-      "Wire options: 2mm, 2.5mm, 3mm, 3.5mm, 4mm thickness",
-      "High-tensile cables (150+ kg load capacity)",
-      "Rust-proof mounting brackets",
-      "UV & weather resistant finish",
-      "Professional-grade hardware"
+      "Stainless steel exterior",
+      "Ceramic interior coating",
+      "Quality magnetron",
+      "Digital controls",
+      "Safety door lock",
+      "Premium components"
     ],
     installation: [
-      "Bulk site assessment",
-      "Custom fabrication",
+      "Location assessment",
+      "Electrical setup",
       "Professional installation",
-      "Quality inspection",
-      "Safety testing"
+      "Functionality testing",
+      "User guidance"
     ],
     maintenance: [
-      "Regular maintenance",
-      "Bulk service contracts",
-      "Emergency repairs",
-      "Annual inspections",
-      "Hardware maintenance"
+      "Regular cleaning service",
+      "Interior maintenance",
+      "Component servicing",
+      "Annual check-ups",
+      "Repair services"
     ],
-    warranty: "5 years warranty on materials and workmanship",
-    image: "/images/safety-nets/invisible-grill-apartments.webp",
-    heroImage: "/images/safety-nets/invisible-grill-apartments.webp",
+    warranty: "1-2 years warranty on installation and parts",
+    image: "/images/services/micro-oven.jpeg",
+    heroImage: "/images/services/micro-oven.jpeg",
     gallery: [
-      "/images/safety-nets/invisible-grill-apartments.webp",
-      "/images/safety-nets/invisible-grill-balconies.jpg",
-      "/images/safety-nets/invisible-grill-windows.jpg"
+      "/images/services/micro-oven.jpeg"
     ],
-    priceRange: "₹75-110 per sq ft",
-    category: "Invisible Grills",
+    priceRange: "Contact for pricing",
+    category: "Kitchen Appliances",
     popular: true
   },
   {
-    id: "pull-dry-cloth-hangers",
-    name: "Pull & Dry Cloth Hangers",
-    slug: "pull-dry-cloth-hangers",
-    description: "Modern pull & dry cloth hangers for efficient laundry drying. Available in 5 different sizes (4 feet, 5 feet, 6 feet, 7 feet, and 8 feet) with 3 rods or 6 rods options to match your space and drying needs. Our stainless steel hangers extend smoothly when needed and fold back neatly when not in use - perfect for saving space in your balcony or utility area.",
-    shortDescription: "Pull & dry cloth hangers - Available in 4ft to 8ft sizes with 3 or 6 rods",
+    id: "dishwasher-service",
+    name: "Dishwasher Service",
+    slug: "dishwasher-service",
+    description: "Complete dishwasher service, installation, and repair solutions. We provide professional service for all major dishwasher brands. From installation to regular maintenance and emergency repairs, we ensure your dishwasher runs smoothly.",
+    shortDescription: "Professional dishwasher service, installation, and repair",
     features: [
-      "Sizes: 4 feet, 5 feet, 6 feet, 7 feet, 8 feet",
-      "Choose 3 rods or 6 rods based on your needs",
-      "Stainless steel - rust-proof construction",
-      "Easy pull & fold mechanism",
-      "Space-saving design - extends only when needed",
-      "Weather resistant for outdoor use",
-      "Easy DIY or professional installation",
-      "Modern & sleek appearance"
+      "Installation service",
+      "Regular maintenance",
+      "Emergency repairs",
+      "Parts replacement",
+      "Deep cleaning",
+      "Water filter service",
+      "All major brands",
+      "Expert technicians"
     ],
     applications: [
-      "Balconies",
-      "Terraces",
-      "Utility areas",
-      "Laundry rooms",
-      "Apartment balconies",
+      "Home kitchens",
+      "Commercial kitchens",
+      "Restaurants",
+      "Hotels",
+      "Catering services",
       "Residential complexes",
-      "Commercial spaces",
-      "High-rise buildings"
+      "Office pantries",
+      "Apartments"
     ],
     benefits: [
-      "Multiple size options - fits any space",
-      "3 or 6 rods - dry more clothes at once",
-      "Space-saving - folds when not in use",
-      "Easy to pull out and push back",
-      "Dries clothes faster - better air circulation",
-      "Long-lasting - won't rust or break",
-      "Clean & organized look",
-      "Increases property value"
+      "Time-saving convenience",
+      "Hygienic cleaning",
+      "Water efficiency",
+      "Extended appliance life",
+      "Regular maintenance",
+      "Quick repairs",
+      "Expert service",
+      "Affordable pricing"
     ],
     materials: [
-      "Grade 316 stainless steel rods & frame",
-      "Size options: 4ft, 5ft, 6ft, 7ft, 8ft",
-      "Rod options: 3 rods or 6 rods configuration",
-      "High-quality pullout mechanism",
-      "Rust-proof mounting brackets",
-      "Weather-resistant coating for outdoor use"
+      "Original spare parts",
+      "Quality cleaning agents",
+      "Premium filters",
+      "Professional tools",
+      "Service kits",
+      "Replacement components"
     ],
     installation: [
       "Site assessment",
-      "Custom fabrication",
+      "Water connection setup",
       "Professional installation",
-      "Quality inspection",
-      "Functionality testing"
+      "Testing and calibration",
+      "User training"
     ],
     maintenance: [
-      "Regular cleaning",
-      "Cable maintenance",
-      "Hardware inspection",
-      "Annual service",
+      "Monthly cleaning",
+      "Filter replacement",
+      "Parts inspection",
+      "Annual servicing",
       "Emergency repairs"
     ],
-    warranty: "3 years warranty on materials and workmanship",
-    image: "/images/safety-nets/pull-dry-cloth-hangers.jpg",
-    heroImage: "/images/safety-nets/pull-dry-cloth-hangers.jpg",
+    warranty: "Service warranty on all repairs",
+    image: "/images/services/dishwasher.webp",
+    heroImage: "/images/services/dishwasher.webp",
     gallery: [
-      "/images/safety-nets/pull-dry-cloth-hangers.jpg",
-      "/images/safety-nets/ceilling-cloth-hangers.jpg",
-      "/images/safety-nets/pull-dry-cloth-hangers-for-balconies.jpg"
+      "/images/services/dishwasher.webp"
     ],
-    priceRange: "₹40-60 per sq ft",
-    category: "Cloth Hangers",
-    popular: true
-  },
-  {
-    id: "ceiling-cloth-hangers",
-    name: "Ceiling Cloth Hangers",
-    slug: "ceiling-cloth-hangers",
-    description: "Ceiling-mounted cloth hangers that maximize your drying space. Available in 5 sizes (4 feet, 5 feet, 6 feet, 7 feet, and 8 feet) with 3 rods or 6 rods options. These hangers are perfect when you have limited wall space - they hang from your ceiling and can be lowered for loading clothes and raised back up for drying. Great for balconies, utility rooms, and covered areas.",
-    shortDescription: "Ceiling cloth hangers - 4ft to 8ft sizes with 3 or 6 rods options",
-    features: [
-      "Available in: 4ft, 5ft, 6ft, 7ft, 8ft lengths",
-      "3 rods or 6 rods - choose your capacity",
-      "Ceiling-mounted - saves wall space",
-      "Pulldown mechanism - easy to load",
-      "Raise up for drying - better air flow",
-      "Rust-proof stainless steel",
-      "High load capacity - holds heavy clothes",
-      "Modern & space-efficient design"
-    ],
-    applications: [
-      "Utility areas",
-      "Laundry rooms",
-      "Balconies",
-      "Terraces",
-      "Commercial spaces",
-      "Residential complexes",
-      "High-rise buildings",
-      "Apartment complexes"
-    ],
-    benefits: [
-      "Saves wall space - uses ceiling area",
-      "Multiple sizes - fits your space perfectly",
-      "3 or 6 rods - dry more in one go",
-      "Easy to lower and raise",
-      "Better drying - elevated air circulation",
-      "Strong & durable - won't rust",
-      "Clean look - no wall clutter",
-      "Affordable solution"
-    ],
-    materials: [
-      "Grade 316 stainless steel rods & cables",
-      "Length options: 4ft, 5ft, 6ft, 7ft, 8ft",
-      "Rod configuration: 3 rods or 6 rods",
-      "Heavy-duty pulley mechanism",
-      "Strong ceiling mounting brackets",
-      "Weather-proof coating"
-    ],
-    installation: [
-      "Ceiling assessment",
-      "Custom fabrication",
-      "Professional installation",
-      "Quality inspection",
-      "Load testing"
-    ],
-    maintenance: [
-      "Regular cleaning",
-      "Cable maintenance",
-      "Hardware inspection",
-      "Annual service",
-      "Emergency repairs"
-    ],
-    warranty: "3 years warranty on materials and workmanship",
-    image: "/images/safety-nets/ceiling-cloth-hangers.jpg",
-    heroImage: "/images/safety-nets/ceiling-cloth-hangers.jpg",
-    gallery: [
-      "/images/safety-nets/ceiling-cloth-hangers.jpg",
-      "/images/safety-nets/pull-dry-cloth-hangers.jpg",
-      "/images/safety-nets/pull-dry-cloth-hangers-balconies.jpg"
-    ],
-    priceRange: "₹35-55 per sq ft",
-    category: "Cloth Hangers",
+    priceRange: "Contact for service charges",
+    category: "Kitchen Appliances",
     popular: false
   },
   {
-    id: "pull-dry-cloth-hangers-for-balconies",
-    name: "Pull & Dry Cloth Hangers for Balconies",
-    slug: "pull-dry-cloth-hangers-for-balconies",
-    description: "Specialized pull & dry cloth hangers designed for balconies - perfect for apartment living! Available in 5 convenient sizes (4 feet, 5 feet, 6 feet, 7 feet, and 8 feet) with 3 rods or 6 rods options. These hangers are specifically designed for balcony installation, featuring weather-resistant materials that withstand sun and rain. Pull out when you need to dry clothes, fold back when done - keeps your balcony looking neat and spacious.",
-    shortDescription: "Balcony cloth hangers - 4ft to 8ft with 3 or 6 rods, weather-resistant",
+    id: "supreme-solar-sales",
+    name: "Supreme Solar Sales",
+    slug: "supreme-solar-sales",
+    description: "Supreme quality solar panel sales and installation services. We provide top-grade solar solutions for residential and commercial use. Reduce your electricity bills with our efficient solar systems and expert installation services.",
+    shortDescription: "Premium solar panel sales and installation services",
     features: [
-      "Sizes: 4 feet, 5 feet, 6 feet, 7 feet, 8 feet",
-      "3 rods or 6 rods - fits your laundry load",
-      "Designed specifically for balconies",
-      "Weather-proof - sun & rain resistant",
-      "Smooth pull & fold mechanism",
-      "Space-saving - extends only when needed",
-      "Easy to install on balcony walls",
-      "Sleek design - enhances balcony look"
+      "High-efficiency panels",
+      "Grid-tied systems",
+      "Off-grid solutions",
+      "Battery backup options",
+      "Professional installation",
+      "Government subsidy support",
+      "Maintenance packages",
+      "Long warranty"
     ],
     applications: [
-      "Apartment balconies",
-      "Residential balconies",
-      "High-rise balconies",
-      "Penthouse balconies",
-      "Duplex balconies",
-      "Studio balconies",
-      "Commercial balconies",
-      "Villa balconies"
+      "Residential rooftops",
+      "Commercial buildings",
+      "Industrial units",
+      "Villas",
+      "Apartments",
+      "Farms",
+      "Educational institutions",
+      "Hospitals"
     ],
     benefits: [
-      "Perfect fit for balconies - made for outdoor use",
-      "Multiple sizes - choose what fits your balcony",
-      "3 or 6 rods - handle family laundry easily",
-      "Folds away - keeps balcony space free",
-      "Sun & rain proof - lasts for years",
-      "Easy to use - even kids can operate",
-      "Looks modern - adds to balcony aesthetics",
-      "Low maintenance - just wipe clean occasionally"
+      "Reduce electricity bills",
+      "Clean energy source",
+      "Government subsidies",
+      "Long-term savings",
+      "Low maintenance",
+      "Environment friendly",
+      "High ROI",
+      "Reliable power supply"
     ],
     materials: [
-      "Grade 316 marine-grade stainless steel",
-      "Length options: 4ft, 5ft, 6ft, 7ft, 8ft",
-      "Rod capacity: 3 rods or 6 rods",
-      "Extra weather-resistant coating for balconies",
-      "Heavy-duty mounting brackets",
-      "Smooth-glide pullout mechanism"
+      "Premium solar panels",
+      "Quality inverters",
+      "Battery systems",
+      "Mounting structures",
+      "Cables and connectors",
+      "Monitoring systems"
     ],
     installation: [
-      "Balcony assessment",
-      "Custom fabrication",
+      "Site survey",
+      "System design",
       "Professional installation",
-      "Quality inspection",
-      "Functionality testing"
+      "Grid connection",
+      "Commissioning and testing"
     ],
     maintenance: [
       "Regular cleaning",
-      "Cable maintenance",
-      "Hardware inspection",
-      "Annual service",
+      "Performance monitoring",
+      "Annual servicing",
+      "Battery maintenance",
       "Emergency repairs"
     ],
-    warranty: "3 years warranty on materials and workmanship",
-    image: "/images/safety-nets/pull-dry-cloth-hangers-balconies.jpg",
-    heroImage: "/images/safety-nets/pull-dry-cloth-hangers-balconies.jpg",
+    warranty: "10-25 years warranty on panels and systems",
+    image: "/images/services/solar.webp",
+    heroImage: "/images/services/solar.webp",
     gallery: [
-      "/images/safety-nets/pull-dry-cloth-hangers-balconies.jpg",
-      "/images/safety-nets/pull-dry-cloth-hangers.jpg",
-      "/images/safety-nets/ceiling-cloth-hangers.jpg"
+      "/images/services/solar.webp"
     ],
-    priceRange: "₹45-65 per sq ft",
-    category: "Cloth Hangers",
+    priceRange: "Contact for quote",
+    category: "Solar Solutions",
+    popular: true
+  },
+  {
+    id: "washing-machine",
+    name: "Washing Machine",
+    slug: "washing-machine",
+    description: "Washing machine sales, installation, and service solutions. We offer top brands of fully automatic, semi-automatic, and front-load washing machines with professional installation and comprehensive after-sales support.",
+    shortDescription: "Washing machine sales, installation, and service",
+    features: [
+      "Fully automatic models",
+      "Semi-automatic options",
+      "Front-load and top-load",
+      "Multiple capacity options",
+      "Energy-efficient",
+      "Quick wash programs",
+      "Child lock safety",
+      "Professional installation"
+    ],
+    applications: [
+      "Home laundry",
+      "Residential complexes",
+      "Hostels",
+      "Hotels",
+      "Commercial laundries",
+      "Apartments",
+      "Villas",
+      "Offices"
+    ],
+    benefits: [
+      "Time-saving",
+      "Efficient cleaning",
+      "Water conservation",
+      "Energy efficient",
+      "Easy to use",
+      "Multiple programs",
+      "Long-lasting",
+      "Warranty coverage"
+    ],
+    materials: [
+      "Stainless steel drums",
+      "Premium motors",
+      "Quality controls",
+      "Durable exteriors",
+      "Safety features",
+      "Modern components"
+    ],
+    installation: [
+      "Location planning",
+      "Water and drain setup",
+      "Professional installation",
+      "Functionality testing",
+      "User demonstration"
+    ],
+    maintenance: [
+      "Regular cleaning",
+      "Drum maintenance",
+      "Filter cleaning",
+      "Annual servicing",
+      "Repair services"
+    ],
+    warranty: "1-5 years warranty based on model",
+    image: "/images/services/washing-machine.avif",
+    heroImage: "/images/services/washing-machine.avif",
+    gallery: [
+      "/images/services/washing-machine.avif"
+    ],
+    priceRange: "Contact for pricing",
+    category: "Home Appliances",
+    popular: true
+  },
+  {
+    id: "cooking-range",
+    name: "Cooking Range",
+    slug: "cooking-range",
+    description: "Premium cooking range installation and service. We provide gas and electric cooking ranges with multiple burners and modern features. Professional installation with safety checks and comprehensive warranty support.",
+    shortDescription: "Premium cooking range installation and service",
+    features: [
+      "Multiple burner options",
+      "Gas and electric models",
+      "Auto-ignition",
+      "Flame failure device",
+      "Easy-to-clean surface",
+      "Modern design",
+      "Efficient heating",
+      "Professional installation"
+    ],
+    applications: [
+      "Home kitchens",
+      "Modular kitchens",
+      "Commercial kitchens",
+      "Restaurants",
+      "Hotels",
+      "Catering services",
+      "Residential complexes",
+      "Villas"
+    ],
+    benefits: [
+      "Multiple cooking zones",
+      "Efficient fuel usage",
+      "Quick cooking",
+      "Safe operation",
+      "Easy maintenance",
+      "Modern appearance",
+      "Reliable performance",
+      "Warranty protection"
+    ],
+    materials: [
+      "Stainless steel body",
+      "Premium burners",
+      "Safety valves",
+      "Quality knobs",
+      "Tempered glass tops",
+      "Durable frames"
+    ],
+    installation: [
+      "Kitchen assessment",
+      "Gas connection setup",
+      "Professional installation",
+      "Safety testing",
+      "Quality verification"
+    ],
+    maintenance: [
+      "Regular cleaning",
+      "Burner servicing",
+      "Safety checks",
+      "Annual maintenance",
+      "Repair services"
+    ],
+    warranty: "1-2 years warranty on installation and parts",
+    image: "/images/services/cooking-range.jpg",
+    heroImage: "/images/services/cooking-range.jpg",
+    gallery: [
+      "/images/services/cooking-range.jpg"
+    ],
+    priceRange: "Contact for pricing",
+    category: "Kitchen Appliances",
+    popular: true
+  },
+  {
+    id: "geyser",
+    name: "Geyser",
+    slug: "geyser",
+    description: "Geyser installation, service, and repair solutions. We offer storage and instant geysers from leading brands with professional installation and maintenance services. Get hot water solutions for your home with expert service.",
+    shortDescription: "Geyser installation, service, and repair solutions",
+    features: [
+      "Storage and instant options",
+      "Multiple capacity choices",
+      "Energy-efficient models",
+      "Auto shut-off safety",
+      "Temperature control",
+      "Rust-proof tank",
+      "Quick heating",
+      "Professional installation"
+    ],
+    applications: [
+      "Residential bathrooms",
+      "Kitchens",
+      "Hotels",
+      "Hostels",
+      "Apartments",
+      "Villas",
+      "Commercial spaces",
+      "Office spaces"
+    ],
+    benefits: [
+      "Hot water on demand",
+      "Energy efficient",
+      "Safe operation",
+      "Easy installation",
+      "Low maintenance",
+      "Long-lasting",
+      "Temperature control",
+      "Warranty coverage"
+    ],
+    materials: [
+      "Rust-proof tanks",
+      "Quality heating elements",
+      "Thermostat controls",
+      "Safety valves",
+      "Premium insulation",
+      "Durable exteriors"
+    ],
+    installation: [
+      "Location assessment",
+      "Electrical and plumbing setup",
+      "Professional installation",
+      "Safety testing",
+      "Functional check"
+    ],
+    maintenance: [
+      "Regular descaling",
+      "Element replacement",
+      "Tank cleaning",
+      "Annual servicing",
+      "Emergency repairs"
+    ],
+    warranty: "1-5 years warranty based on model",
+    image: "/images/services/geyser.webp",
+    heroImage: "/images/services/geyser.webp",
+    gallery: [
+      "/images/services/geyser.webp"
+    ],
+    priceRange: "Contact for pricing",
+    category: "Home Appliances",
+    popular: true
+  },
+  {
+    id: "aquaguard-sales",
+    name: "Aquaguard Sales",
+    slug: "aquaguard-sales",
+    description: "Aquaguard water purifier sales and installation. We provide premium water purification systems with advanced filtration technology. Ensure safe and clean drinking water for your family with our certified installation and service.",
+    shortDescription: "Aquaguard water purifier sales and installation",
+    features: [
+      "RO purification",
+      "UV sterilization",
+      "UF filtration",
+      "TDS control",
+      "Multi-stage filtration",
+      "Storage tank options",
+      "Digital display",
+      "Professional installation"
+    ],
+    applications: [
+      "Home kitchens",
+      "Offices",
+      "Schools",
+      "Hospitals",
+      "Restaurants",
+      "Hotels",
+      "Residential complexes",
+      "Commercial spaces"
+    ],
+    benefits: [
+      "Pure drinking water",
+      "Removes impurities",
+      "Health protection",
+      "Cost-effective",
+      "Low maintenance",
+      "Advanced technology",
+      "Reliable performance",
+      "Warranty support"
+    ],
+    materials: [
+      "Premium RO membranes",
+      "UV lamps",
+      "Activated carbon filters",
+      "Sediment filters",
+      "Storage tanks",
+      "Quality components"
+    ],
+    installation: [
+      "Site inspection",
+      "Water connection setup",
+      "Professional installation",
+      "System testing",
+      "User training"
+    ],
+    maintenance: [
+      "Filter replacement",
+      "Membrane cleaning",
+      "UV lamp replacement",
+      "Annual servicing",
+      "Emergency repairs"
+    ],
+    warranty: "1-2 years warranty on installation and parts",
+    image: "/images/services/aquaguard.jpg",
+    heroImage: "/images/services/aquaguard.jpg",
+    gallery: [
+      "/images/services/aquaguard.jpg"
+    ],
+    priceRange: "Contact for pricing",
+    category: "Water Solutions",
+    popular: true
+  },
+  {
+    id: "generator-service",
+    name: "Generator Service",
+    slug: "generator-service",
+    description: "Complete generator service, installation, and repair solutions. We provide professional service for all types of generators - diesel, petrol, and inverter generators. From installation to maintenance and emergency repairs, we ensure uninterrupted power supply.",
+    shortDescription: "Professional generator service, installation, and repair",
+    features: [
+      "Installation service",
+      "Regular maintenance",
+      "Emergency repairs",
+      "Parts replacement",
+      "Oil and filter change",
+      "Load testing",
+      "All generator types",
+      "Expert technicians"
+    ],
+    applications: [
+      "Residential backup",
+      "Commercial backup",
+      "Industrial use",
+      "Hospitals",
+      "Hotels",
+      "Office buildings",
+      "Shops",
+      "Warehouses"
+    ],
+    benefits: [
+      "Uninterrupted power",
+      "Backup during outages",
+      "Extended generator life",
+      "Fuel efficiency",
+      "Regular maintenance",
+      "Quick repairs",
+      "Expert service",
+      "Affordable rates"
+    ],
+    materials: [
+      "Original spare parts",
+      "Quality oils and filters",
+      "Professional tools",
+      "Service kits",
+      "Replacement components",
+      "Maintenance supplies"
+    ],
+    installation: [
+      "Site assessment",
+      "Foundation setup",
+      "Professional installation",
+      "Electrical connection",
+      "Testing and commissioning"
+    ],
+    maintenance: [
+      "Monthly servicing",
+      "Oil and filter change",
+      "Battery check",
+      "Load testing",
+      "Emergency repairs"
+    ],
+    warranty: "Service warranty on all repairs",
+    image: "/images/services/generator.jpg",
+    heroImage: "/images/services/generator.jpg",
+    gallery: [
+      "/images/services/generator.jpg"
+    ],
+    priceRange: "Contact for service charges",
+    category: "Power Solutions",
     popular: true
   }
 ];

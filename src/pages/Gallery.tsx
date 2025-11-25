@@ -5,9 +5,15 @@ import {
   Camera, 
   Download, 
   Eye,
-  Shield,
-  HardHat,
+  Flame,
+  UtensilsCrossed,
+  Zap,
+  Droplets,
+  Sun,
+  Waves,
   Settings,
+  Shield,
+  Battery,
   X,
   ZoomIn,
   ArrowRight,
@@ -21,31 +27,46 @@ import {
   Award,
   Clock
 } from 'lucide-react';
+import { services } from '../data/services';
 
 const Gallery: React.FC = () => {
+  // Organize services into gallery categories
   const galleryCategories = [
     {
-      title: "Invisible Grills",
-      icon: <Shield className="h-6 w-6" />,
+      title: "Kitchen Appliances",
+      icon: <Flame className="h-6 w-6" />,
       color: "accent",
-      images: [
-        { src: "/images/safety-nets/invisible-grill-balconies.jpg", alt: "Invisible Grill for Balconies", title: "Invisible Grill for Balconies" },
-        { src: "/images/safety-nets/invisible-grill-windows.jpg", alt: "Invisible Grill for Windows", title: "Invisible Grill for Windows" },
-        { src: "/images/safety-nets/invisible-grill-apartments.webp", alt: "Invisible Grill for Apartments", title: "Invisible Grill for Apartments" },
-        { src: "/images/safety-nets/invisible-grill.jpg", alt: "Stainless Steel Invisible Grill", title: "Stainless Steel Invisible Grill" }
-      ]
+      services: services.filter(s => s.category === "Kitchen Appliances")
     },
     {
-      title: "Cloth Hangers",
-      icon: <Settings className="h-6 w-6" />,
+      title: "Home Appliances",
+      icon: <Waves className="h-6 w-6" />,
       color: "secondary",
-      images: [
-        { src: "/images/safety-nets/pull-dry-cloth-hangers.jpg", alt: "Pull & Dry Cloth Hangers", title: "Pull & Dry Cloth Hangers" },
-        { src: "/images/safety-nets/ceiling-cloth-hangers.jpg", alt: "Ceiling Cloth Hangers", title: "Ceiling Cloth Hangers" },
-        { src: "/images/safety-nets/pull-dry-cloth-hangers-balconies.jpg", alt: "Pull & Dry Cloth Hangers for Balconies", title: "Pull & Dry Cloth Hangers for Balconies" }
-      ]
+      services: services.filter(s => s.category === "Home Appliances")
+    },
+    {
+      title: "Water Solutions",
+      icon: <Droplets className="h-6 w-6" />,
+      color: "primary",
+      services: services.filter(s => s.category === "Water Solutions")
+    },
+    {
+      title: "Solar & Power",
+      icon: <Sun className="h-6 w-6" />,
+      color: "accent",
+      services: services.filter(s => s.category === "Solar Solutions" || s.category === "Power Solutions")
     }
   ];
+
+  // Convert services to gallery images format
+  const galleryCategoriesWithImages = galleryCategories.map(category => ({
+    ...category,
+    images: category.services.map(service => ({
+      src: service.image,
+      alt: service.name,
+      title: service.name
+    }))
+  })).filter(category => category.images.length > 0);
 
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
 
@@ -61,9 +82,9 @@ const Gallery: React.FC = () => {
     <>
       <Helmet>
         <title>Gallery | Balaji Services</title>
-        <meta name="description" content="View our gallery of projects from Balaji Services." />
+        <meta name="description" content="View our gallery of home appliance installations and service projects from Balaji Services in Bangalore. Chimney, Hob, Washing Machine, Geyser, Solar and more." />
         <meta property="og:title" content="Gallery | Balaji Services" />
-        <meta property="og:description" content="View our gallery of projects." />
+        <meta property="og:description" content="View our gallery of home appliance installations and service projects." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Gallery | Balaji Services" />
@@ -75,12 +96,15 @@ const Gallery: React.FC = () => {
       {/* Hero Section - Redesigned */}
       <section className="relative text-white py-10 lg:py-16 overflow-hidden min-h-[40vh] sm:min-h-[50vh] flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url('/images/safety-nets/invisible-grill-balconies.jpg')`
-        }}></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/images/services/chimney.webp')`
+          }}
+        ></div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
         
         {/* Decorative Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -114,8 +138,8 @@ const Gallery: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Explore our professional installations and quality work across Hyderabad. 
-            See the difference our expertise makes in invisible grills and cloth hangers.
+            Explore our professional appliance installations and quality service work across Bangalore. 
+            See the difference our expertise makes in home appliances and professional service.
           </motion.p>
         </div>
       </section>
@@ -153,11 +177,11 @@ const Gallery: React.FC = () => {
               Explore Photo <span className="text-primary-700">Gallery</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-              Browse through our extensive collection of completed projects showcasing our expertise in invisible grills and cloth hangers
+              Browse through our extensive collection of completed projects showcasing our expertise in home appliance installation and service
             </p>
           </motion.div>
 
-          {galleryCategories.map((category, categoryIndex) => {
+          {galleryCategoriesWithImages.map((category, categoryIndex) => {
             const colorClasses = {
               accent: {
                 bg: "from-accent-500 to-accent-600",
@@ -172,6 +196,13 @@ const Gallery: React.FC = () => {
                 iconColor: "text-secondary-600",
                 border: "border-secondary-200",
                 hoverBg: "group-hover:from-secondary-50 group-hover:to-secondary-100/50"
+              },
+              primary: {
+                bg: "from-primary-500 to-primary-600",
+                iconBg: "bg-primary-100",
+                iconColor: "text-primary-600",
+                border: "border-primary-200",
+                hoverBg: "group-hover:from-primary-50 group-hover:to-primary-100/50"
               }
             };
             
@@ -213,15 +244,24 @@ const Gallery: React.FC = () => {
                     >
                       <div className="relative overflow-hidden rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 bg-white">
                         {/* Image Container */}
-                        <div className="relative aspect-square overflow-hidden">
+                        <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-blue-500 to-blue-700">
                           <img
                             src={image.src}
                             alt={image.alt}
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 relative z-10"
+                            onError={(e) => {
+                              (e.target as HTMLImageElement).style.display = 'none';
+                            }}
                           />
+                          {/* Fallback content if image fails - shown when image errors */}
+                          <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+                            <div className="text-white text-center p-4 opacity-20">
+                              {category.icon}
+                            </div>
+                          </div>
                           
                           {/* Gradient Overlay */}
-                          <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                          <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20`}></div>
                           
                           {/* Hover Overlay */}
                           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
@@ -362,10 +402,10 @@ const Gallery: React.FC = () => {
               </motion.div>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                Ready to Transform Your <span className="text-accent-400">Space?</span>
+                Ready to Upgrade Your <span className="text-accent-400">Home?</span>
               </h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
-                Contact us today for a free consultation and see how our invisible grills and cloth hangers can enhance your home or office.
+                Contact us today for a free consultation and see how our quality home appliances and professional service can enhance your home or office. Get expert installation and reliable service for all your appliance needs.
               </p>
             </motion.div>
 
@@ -420,7 +460,7 @@ const Gallery: React.FC = () => {
               
               {/* Call Now Button */}
               <motion.a
-                href="tel:+917893987771"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-white/10 backdrop-blur-md border-2 border-white/30 hover:border-white/50 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center hover:bg-white/20 overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -440,7 +480,7 @@ const Gallery: React.FC = () => {
               className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 mb-8 sm:mb-12"
             >
               <a
-                href="https://wa.me/917893987771"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center px-4 sm:px-6 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 transition-all duration-300"
@@ -449,11 +489,11 @@ const Gallery: React.FC = () => {
                 <span className="text-sm sm:text-base font-semibold text-white">WhatsApp</span>
               </a>
               <a
-                href="tel:+917893987771"
+                href="tel:+919902730741"
                 className="group flex items-center px-4 sm:px-6 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 transition-all duration-300"
               >
                 <Phone className="h-5 w-5 mr-2 text-accent-400" />
-                <span className="text-sm sm:text-base font-semibold text-white">+91 7893987771</span>
+                <span className="text-sm sm:text-base font-semibold text-white">+91 9902730741</span>
               </a>
             </motion.div>
 
@@ -467,7 +507,7 @@ const Gallery: React.FC = () => {
             >
               <Star className="h-5 w-5 text-accent-400 mr-2 fill-accent-400" />
               <span className="text-white font-semibold text-sm sm:text-base">
-                Trusted by 5200+ Happy Customers
+                Trusted by 4500+ Happy Customers
               </span>
             </motion.div>
           </div>

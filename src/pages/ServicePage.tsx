@@ -66,7 +66,7 @@ const ServicePage: React.FC = () => {
         ></div>
         
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-blue-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-gray-900/60 to-black/70"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

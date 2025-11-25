@@ -1,7 +1,7 @@
 {
   "short_name": "Balaji Services",
   "name": "Balaji Services",
-  "description": "Professional service business in Hyderabad.",
+  "description": "Professional service business in Bangalore.",
   "icons": [
     {
       "src": "favicon.png",
@@ -26,7 +26,7 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["business", "safety", "construction", "home-improvement"],
+  "categories": ["business", "home-improvement", "appliance-service", "repair"],
   "screenshots": [
     {
       "src": "screenshot-wide.png",
@@ -43,9 +43,9 @@
   ],
   "shortcuts": [
     {
-      "name": "Safety Nets Services",
+      "name": "Appliance Services",
       "short_name": "Services",
-      "description": "View our safety nets services",
+      "description": "View our appliance services",
       "url": "/services",
       "icons": [
         {
@@ -57,7 +57,7 @@
     {
       "name": "Get Quote",
       "short_name": "Quote",
-      "description": "Request a safety nets quote",
+      "description": "Request a service quote",
       "url": "/contact",
       "icons": [
         {
