@@ -460,7 +460,7 @@ const Gallery: React.FC = () => {
               
               {/* Call Now Button */}
               <motion.a
-                href="tel:+919902730741"
+                href="tel:+918790839401"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-white/10 backdrop-blur-md border-2 border-white/30 hover:border-white/50 text-white px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center hover:bg-white/20 overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -480,7 +480,7 @@ const Gallery: React.FC = () => {
               className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 mb-8 sm:mb-12"
             >
               <a
-                href="https://wa.me/919902730741"
+                href="https://wa.me/918790839401"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center px-4 sm:px-6 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 transition-all duration-300"
@@ -489,11 +489,11 @@ const Gallery: React.FC = () => {
                 <span className="text-sm sm:text-base font-semibold text-white">WhatsApp</span>
               </a>
               <a
-                href="tel:+919902730741"
+                href="tel:+918790839401"
                 className="group flex items-center px-4 sm:px-6 py-3 rounded-xl bg-white/5 backdrop-blur-sm border border-white/20 hover:bg-white/10 transition-all duration-300"
               >
                 <Phone className="h-5 w-5 mr-2 text-accent-400" />
-                <span className="text-sm sm:text-base font-semibold text-white">+91 9902730741</span>
+                <span className="text-sm sm:text-base font-semibold text-white">+91 8790839401</span>
               </a>
             </motion.div>
 

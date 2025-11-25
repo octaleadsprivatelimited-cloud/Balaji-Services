@@ -129,7 +129,7 @@ The build folder will contain all production-ready files.
 
 ## 📞 Contact Information
 
-- **Phone**: +91 9902730741, +91 8123288996
+- **Phone**: +91 8790839401
 - **Email**: shreebalajiserviceblr@gmail.com
 - **Address**: No. 754, Ground Floor, 1st B Cross, Muthyalamma Nagar, Bangalore -560054
 - **Service Areas**: Bangalore and surrounding areas
@@ -140,7 +140,7 @@ The build folder will contain all production-ready files.
 Create a `.env` file for environment-specific configurations:
 ```env
 REACT_APP_COMPANY_NAME=Balaji Services
-REACT_APP_PHONE_NUMBER=+919902730741
+REACT_APP_PHONE_NUMBER=+918790839401
 REACT_APP_EMAIL=shreebalajiserviceblr@gmail.com
 ```
 
@@ -174,7 +174,7 @@ Customize colors, fonts, and animations in `tailwind.config.js`
 ## 🤝 Contributing
 
 For contributions and collaboration, please contact us directly:
-- Phone: +91 7893987771
+- Phone: +91 8790839401
 - Email: info@tajsafetynets.com (Taj Safety Nets)
 
 ## 📄 License
@@ -185,8 +185,8 @@ This project is licensed under the MIT License.
 
 For support and questions:
 
-- Phone: +91 7893987771
-- WhatsApp: +91 7893987771
+- Phone: +91 8790839401
+- WhatsApp: +91 8790839401
 
 ---
 

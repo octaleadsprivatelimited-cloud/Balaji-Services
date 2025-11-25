@@ -141,7 +141,7 @@ const GreetingModal: React.FC = () => {
                   className="w-full bg-accent-600 hover:bg-accent-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors flex items-center justify-center"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Now: +91 7893987771
+                  Call Now: +91 8790839401
                 </button>
               </motion.div>
 
