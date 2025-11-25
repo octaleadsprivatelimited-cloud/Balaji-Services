@@ -17,7 +17,6 @@ import Article from './pages/Article';
 import ImageTest from './pages/ImageTest';
 import Gallery from './pages/Gallery';
 import WhatsAppButton from './components/WhatsAppButton';
-import GreetingModal from './components/GreetingModal';
 import ScrollToTop from './components/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
@@ -63,7 +62,6 @@ function App() {
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </main>
-        <GreetingModal />
         <WhatsAppButton />
         <Footer />
           <SpeedInsights />
