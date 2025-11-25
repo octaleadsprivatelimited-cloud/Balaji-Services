@@ -123,7 +123,7 @@ export const articles: Article[] = [
     featured: true,
     seoTitle: "Safety Nets in Hyderabad 2024 | Best Safety Companies & Installation Guide",
     seoDescription: "Complete guide to safety nets in Hyderabad. Installation costs, local companies, safety standards, and success stories.",
-    seoKeywords: ["safety nets Hyderabad", "balcony safety nets Hyderabad", "construction safety nets Hyderabad", "cricket nets Hyderabad", "pigeon nets Hyderabad"],
+    seoKeywords: ["home appliances Bangalore", "appliance service Bangalore", "chimney installation Bangalore", "hob service Bangalore", "microwave repair Bangalore"],
     relatedArticles: ["safety-nets-hyderabad-guide-2024"],
     location: "Hyderabad",
     contactForm: true
@@ -196,7 +196,7 @@ export const articles: Article[] = [
     featured: false,
     seoTitle: "Safety Nets in Delhi 2024 | Installation Costs & Local Companies",
     seoDescription: "Complete guide to safety nets in Delhi. Learn about installation costs, local companies, safety standards, and success stories.",
-    seoKeywords: ["safety nets Delhi", "balcony safety nets Delhi", "construction safety nets Delhi", "cricket nets Delhi", "pigeon nets Delhi"],
+    seoKeywords: ["washing machine service Bangalore", "geyser installation Bangalore", "solar panel installation Bangalore", "aquaguard service Bangalore", "generator service Bangalore"],
     relatedArticles: ["safety-nets-mumbai-guide-2024", "safety-nets-bangalore-guide-2024", "safety-nets-chennai-guide-2024"],
     location: "Delhi",
     contactForm: true
@@ -274,7 +274,7 @@ export const articles: Article[] = [
     featured: false,
     seoTitle: "Safety Nets in Bangalore 2024 | Industrial & Residential Safety Solutions",
     seoDescription: "Complete guide to safety nets in Bangalore. Learn about industrial and residential safety solutions, costs, and local companies.",
-    seoKeywords: ["safety nets Bangalore", "balcony safety nets Bangalore", "construction safety nets Bangalore", "cricket nets Bangalore", "pigeon nets Bangalore"],
+    seoKeywords: ["appliance repair Bangalore", "kitchen appliance service Bangalore", "home appliance installation Bangalore", "appliance service center Bangalore", "best appliance service Bangalore"],
     relatedArticles: ["safety-nets-mumbai-guide-2024", "safety-nets-delhi-guide-2024", "safety-nets-chennai-guide-2024"],
     location: "Bangalore",
     contactForm: true
@@ -339,7 +339,7 @@ additionalLocations.forEach((location, index) => {
     featured: false,
     seoTitle: `Safety Nets in ${location} 2024 | Installation Costs & Local Companies`,
     seoDescription: `Complete guide to safety nets in ${location}. Learn about installation costs, local companies, safety standards, and success stories.`,
-    seoKeywords: [`safety nets ${location}`, `balcony safety nets ${location}`, `construction safety nets ${location}`, `cricket nets ${location}`],
+    seoKeywords: [`home appliances ${location}`, `appliance service ${location}`, `chimney installation ${location}`, `washing machine service ${location}`, `geyser installation ${location}`],
     relatedArticles: ["safety-nets-mumbai-guide-2024", "safety-nets-delhi-guide-2024", "safety-nets-bangalore-guide-2024"],
     location: location,
     contactForm: true

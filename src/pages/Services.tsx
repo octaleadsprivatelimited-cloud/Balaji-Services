@@ -57,7 +57,7 @@ const Services: React.FC = () => {
       </Helmet>
       <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative text-white py-12 overflow-hidden">
+      <section className="relative text-white pt-24 pb-12 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

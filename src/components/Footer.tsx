@@ -11,7 +11,13 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {/* Company Info */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-white mb-2">Balaji Services</h3>
+              <div className="mb-2">
+                <img 
+                  src="/images/logo.png" 
+                  alt="Balaji Services Logo" 
+                  className="h-14 w-auto object-contain"
+                />
+              </div>
               <p className="text-sm text-gray-300 leading-relaxed">
                 Professional service business in Bangalore.
               </p>

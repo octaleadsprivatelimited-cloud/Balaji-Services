@@ -53,10 +53,13 @@ const Landing: React.FC = () => {
       <header className="bg-white/10 backdrop-blur-sm border-b border-white/20 sticky top-0 z-50 w-full">
         <div className="w-full max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 py-2 sm:py-3">
           <div className="flex items-center justify-between w-full">
-            {/* Logo and Company Name */}
+            {/* Logo */}
             <div className="flex items-center flex-shrink-0 min-w-0">
-              <Shield className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-yellow-400 mr-1 sm:mr-1.5 lg:mr-2 flex-shrink-0" />
-              <h1 className="text-sm sm:text-base lg:text-lg font-bold text-white truncate">Balaji Services</h1>
+              <img 
+                src="/images/logo.png" 
+                alt="Balaji Services Logo" 
+                className="h-6 w-auto sm:h-8 lg:h-10 object-contain flex-shrink-0"
+              />
             </div>
             
             {/* Contact Buttons - Removed */}

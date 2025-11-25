@@ -30,8 +30,12 @@ const Navbar: React.FC = () => {
     <nav className="shadow-md fixed w-full z-50 bg-primary-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            <span className="text-white font-bold text-lg sm:text-xl">Balaji Services</span>
+          <Link to="/" className="flex items-center overflow-visible">
+            <img 
+              src="/images/logo.png" 
+              alt="Balaji Services Logo" 
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Mobile Menu - Only visible on small screens */}
