@@ -55,8 +55,8 @@ const Contact: React.FC = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      details: ["+91 8790839401"],
-      action: "tel:+918790839401",
+      details: ["+91-9902730741", "+91-8123288996"],
+      action: "tel:+919902730741",
       color: "accent"
     },
     {
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
     <>
       <Helmet>
         <title>Contact Us | Balaji Services</title>
-        <meta name="description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore. Call +91 8790839401. Expert service for chimney, hob, washing machine, geyser, and more." />
+        <meta name="description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore. Call +91-9902730741 or +91-8123288996. Expert service for chimney, hob, washing machine, geyser, and more." />
         <meta property="og:title" content="Contact Us | Balaji Services" />
         <meta property="og:description" content="Contact Balaji Services for professional appliance installation, service, and repair in Bangalore. Expert solutions for all your home appliances." />
         <meta property="og:type" content="website" />
@@ -606,7 +606,7 @@ const Contact: React.FC = () => {
               className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-6 sm:mb-8"
             >
               <motion.a
-                href="tel:+918790839401"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-white hover:bg-gray-100 text-primary-700 px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -619,7 +619,7 @@ const Contact: React.FC = () => {
               </motion.a>
               
               <motion.a
-                href="https://wa.me/918790839401"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -643,7 +643,9 @@ const Contact: React.FC = () => {
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-white mr-2" />
                 <div>
-                  <span className="text-sm sm:text-base font-semibold text-white">+91 8790839401</span>
+                  <span className="text-sm sm:text-base font-semibold text-white">
+                    +91-9902730741 / +91-8123288996
+                  </span>
                   <p className="text-xs text-gray-300">Balaji Services</p>
                 </div>
               </div>

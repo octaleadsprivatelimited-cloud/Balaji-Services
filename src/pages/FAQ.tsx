@@ -369,7 +369,7 @@ const FAQ: React.FC = () => {
             {/* Contact Options */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12">
               <motion.a
-                href="tel:+918790839401"
+                href="tel:+919902730741"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group relative bg-gradient-to-r from-accent-500 to-accent-600 text-gray-900 px-8 sm:px-10 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-2xl hover:shadow-accent-500/50 overflow-hidden min-w-[200px] sm:min-w-[240px]"
@@ -381,7 +381,7 @@ const FAQ: React.FC = () => {
               </motion.a>
               
               <motion.a
-                href="https://wa.me/918790839401"
+                href="https://wa.me/919902730741"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}

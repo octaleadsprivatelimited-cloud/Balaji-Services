@@ -69,7 +69,7 @@
 ### Branding
 - **Logo**: Always include Taj Safety Nets logo
 - **Tagline**: "Leading Invisible Grill Installation in Hyderabad"
-- **Contact**: +91 8790839401
+- **Contact**: +91-9902730741 / +91-8123288996
 - **Website**: steel-invisible-kills.vercel.app
 
 ## File Naming Convention
