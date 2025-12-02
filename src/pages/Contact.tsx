@@ -62,8 +62,8 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["shreebalajiserviceblr@gmail.com"],
-      action: "mailto:shreebalajiserviceblr@gmail.com",
+      details: ["balajiservice541@gmail.com"],
+      action: "mailto:balajiservice541@gmail.com",
       color: "secondary"
     },
     {
