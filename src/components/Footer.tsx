@@ -98,9 +98,8 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <Link to="/privacy" className="hover:text-accent-400 transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-accent-400 transition-colors">Terms of Service</Link>
               <Link to="/contact" className="hover:text-accent-400 transition-colors">Contact</Link>
+              <a href="/sitemap.xml" className="hover:text-accent-400 transition-colors">Sitemap</a>
             </div>
           </div>
         </div>
