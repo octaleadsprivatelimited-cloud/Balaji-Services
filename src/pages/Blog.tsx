@@ -18,14 +18,15 @@ const Blog: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | Balaji Services</title>
-        <meta name="description" content="Read our blog for tips and guides from Balaji Services." />
-        <meta property="og:title" content="Blog | Balaji Services" />
-        <meta property="og:description" content="Read our blog for tips and guides." />
+        <title>Blog | Balaji Services - Home Appliance Tips & Guides</title>
+        <meta name="description" content="Read our blog for expert tips, guides & insights on home appliances. Learn about Chimney maintenance, Washing Machine care, Geyser tips, Solar benefits & more from Balaji Services Bangalore." />
+        <meta name="keywords" content="home appliance blog, chimney maintenance tips, washing machine care guide, geyser maintenance tips, solar panel benefits, appliance care tips, home appliance guides, Balaji Services blog, Bangalore appliance tips" />
+        <meta property="og:title" content="Blog | Balaji Services - Appliance Tips & Guides" />
+        <meta property="og:description" content="Expert tips & guides on home appliances from Balaji Services." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Blog | Balaji Services" />
-        <meta name="twitter:description" content="Read our blog for tips and guides." />
+        <meta name="twitter:description" content="Expert home appliance tips & guides." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

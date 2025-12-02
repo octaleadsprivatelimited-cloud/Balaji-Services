@@ -59,14 +59,15 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Balaji Services</title>
-        <meta name="description" content="Balaji Services - Professional home appliance sales and service in Bangalore. Chimney, Hob, Micro Oven, Washing Machine, Geyser, Aquaguard, Solar, Generator installation and repair services." />
-        <meta property="og:title" content="Balaji Services" />
-        <meta property="og:description" content="Professional service business in Bangalore." />
+        <title>Balaji Services | Home Appliance Sales & Service in Bangalore</title>
+        <meta name="description" content="Balaji Services - Professional home appliance sales, installation & service in Bangalore. Expert solutions for Chimney, Hob, Micro Oven, Washing Machine, Geyser, Aquaguard, Solar & Generator. Call +91-9902730741." />
+        <meta name="keywords" content="home appliance service Bangalore, chimney installation Bangalore, hob service Bangalore, micro oven repair, washing machine service, geyser installation, Aquaguard sales, solar installation Bangalore, generator service, appliance repair Bangalore, Balaji Services" />
+        <meta property="og:title" content="Balaji Services | Home Appliance Sales & Service in Bangalore" />
+        <meta property="og:description" content="Professional home appliance sales, installation & service in Bangalore. Expert solutions for Chimney, Hob, Washing Machine, Geyser & more." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Balaji Services" />
-        <meta name="twitter:description" content="Professional service business in Bangalore." />
+        <meta name="twitter:title" content="Balaji Services | Home Appliance Sales & Service" />
+        <meta name="twitter:description" content="Professional home appliance sales, installation & service in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

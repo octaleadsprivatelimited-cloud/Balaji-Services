@@ -81,14 +81,15 @@ const Gallery: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Gallery | Balaji Services</title>
-        <meta name="description" content="View our gallery of home appliance installations and service projects from Balaji Services in Bangalore. Chimney, Hob, Washing Machine, Geyser, Solar and more." />
-        <meta property="og:title" content="Gallery | Balaji Services" />
-        <meta property="og:description" content="View our gallery of home appliance installations and service projects." />
+        <title>Gallery | Balaji Services - Home Appliance Installation Photos Bangalore</title>
+        <meta name="description" content="View our gallery of professional home appliance installations and service projects in Bangalore. See our quality work on Chimney, Hob, Washing Machine, Geyser, Solar panels & Generator installations." />
+        <meta name="keywords" content="appliance installation gallery, chimney installation photos, hob installation images, washing machine service photos, geyser installation gallery, solar panel installation Bangalore, home appliance work samples, Balaji Services portfolio" />
+        <meta property="og:title" content="Gallery | Balaji Services - Our Work Portfolio" />
+        <meta property="og:description" content="View our gallery of professional home appliance installations in Bangalore." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Gallery | Balaji Services" />
-        <meta name="twitter:description" content="View our gallery of projects." />
+        <meta name="twitter:description" content="View our home appliance installation gallery." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

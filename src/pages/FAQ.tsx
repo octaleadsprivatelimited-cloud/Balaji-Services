@@ -141,14 +141,15 @@ const FAQ: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - Frequently Asked Questions | Balaji Services</title>
-        <meta name="description" content="Frequently asked questions about Balaji Services - Appliance installation, service, and repair in Bangalore. Get answers about kitchen appliances, water solutions, solar systems, and generator services." />
+        <title>FAQ - Frequently Asked Questions | Balaji Services Bangalore</title>
+        <meta name="description" content="Frequently asked questions about Balaji Services - Appliance installation, service & repair in Bangalore. Get answers about Chimney, Hob, Washing Machine, Geyser, Aquaguard, Solar & Generator services." />
+        <meta name="keywords" content="appliance service FAQ, chimney installation questions, hob service FAQ, washing machine repair FAQ, geyser installation questions, Aquaguard service FAQ, solar installation FAQ, generator service questions, Balaji Services FAQ, Bangalore appliance FAQ" />
         <meta property="og:title" content="FAQ - Frequently Asked Questions | Balaji Services" />
-        <meta property="og:description" content="Get answers about appliance installation, service, and repair in Bangalore. Expert solutions for kitchen appliances, washing machines, geysers, water purifiers, solar systems, and generators." />
+        <meta property="og:description" content="Get answers about appliance installation, service & repair in Bangalore." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="FAQ - Frequently Asked Questions | Balaji Services" />
-        <meta name="twitter:description" content="Get answers about appliance installation, service, and repair in Bangalore." />
+        <meta name="twitter:title" content="FAQ | Balaji Services" />
+        <meta name="twitter:description" content="Get answers about appliance services in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

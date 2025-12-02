@@ -71,14 +71,15 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Balaji Services</title>
-        <meta name="description" content="Learn about Balaji Services - Professional home appliance sales and service in Bangalore. Expert installation and repair for Chimney, Hob, Washing Machine, Geyser, and more." />
-        <meta property="og:title" content="About Us | Balaji Services" />
-        <meta property="og:description" content="Professional service business in Bangalore." />
+        <title>About Us | Balaji Services - Home Appliance Experts in Bangalore</title>
+        <meta name="description" content="Learn about Balaji Services - 15+ years of professional home appliance sales and service in Bangalore. 4500+ happy customers. Expert installation, repair & maintenance for Chimney, Hob, Washing Machine, Geyser, Solar & Generator." />
+        <meta name="keywords" content="about Balaji Services, home appliance company Bangalore, appliance installation experts, appliance repair company, trusted appliance service, Bangalore appliance experts, professional technicians, certified appliance service" />
+        <meta property="og:title" content="About Us | Balaji Services - Home Appliance Experts" />
+        <meta property="og:description" content="15+ years of professional home appliance sales and service in Bangalore. 4500+ happy customers." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About Us | Balaji Services" />
-        <meta name="twitter:description" content="Professional service business in Bangalore." />
+        <meta name="twitter:description" content="15+ years of professional home appliance service in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

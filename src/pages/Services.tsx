@@ -44,14 +44,15 @@ const Services: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services | Balaji Services</title>
-        <meta name="description" content="Balaji Services - Professional home appliances and services in Bangalore. Chimney, Hob, Microwave, Dishwasher, Solar, Washing Machine, Cooking Range, Geyser, Aquaguard, Generator services." />
-        <meta property="og:title" content="Our Services | Balaji Services" />
-        <meta property="og:description" content="Professional home appliances and services in Bangalore." />
+        <title>Our Services | Balaji Services - Home Appliance Installation & Repair Bangalore</title>
+        <meta name="description" content="Explore our professional home appliance services in Bangalore - Chimney, Hob, Micro Oven, Dishwasher, Washing Machine, Cooking Range, Geyser, Aquaguard, Solar & Generator installation, repair & maintenance. Call +91-9902730741." />
+        <meta name="keywords" content="chimney installation Bangalore, hob service, micro oven repair, dishwasher installation, washing machine service Bangalore, cooking range repair, geyser installation, Aquaguard service, solar installation, generator repair, home appliance services Bangalore" />
+        <meta property="og:title" content="Our Services | Balaji Services - Home Appliance Experts" />
+        <meta property="og:description" content="Professional home appliance installation, repair & maintenance in Bangalore." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Our Services | Balaji Services" />
-        <meta name="twitter:description" content="Professional home appliances and services in Bangalore." />
+        <meta name="twitter:description" content="Professional home appliance services in Bangalore." />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>

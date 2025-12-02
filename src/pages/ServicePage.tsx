@@ -41,18 +41,19 @@ const ServicePage: React.FC = () => {
   }
 
   // Generate keywords based on service
-  const serviceKeywords = service.name.toLowerCase().replace(/&/g, '').replace(/\s+/g, ', ');
+  const serviceKeywords = `${service.name} Bangalore, ${service.name} installation, ${service.name} service, ${service.name} repair, ${service.name} maintenance, Balaji Services ${service.name}, professional ${service.name} service`;
   return (
     <>
       <Helmet>
-        <title>{service.name} | Balaji Services</title>
-        <meta name="description" content={`${service.shortDescription} Professional service by Balaji Services.`} />
-        <meta property="og:title" content={`${service.name} | Balaji Services`} />
-        <meta property="og:description" content={`${service.shortDescription} Professional service by Balaji Services.`} />
+        <title>{service.name} Installation & Service in Bangalore | Balaji Services</title>
+        <meta name="description" content={`Professional ${service.name} installation, service & repair in Bangalore. ${service.shortDescription} Expert technicians, genuine parts & warranty. Call +91-9902730741.`} />
+        <meta name="keywords" content={serviceKeywords} />
+        <meta property="og:title" content={`${service.name} Service in Bangalore | Balaji Services`} />
+        <meta property="og:description" content={`Professional ${service.name} installation & service in Bangalore. ${service.shortDescription}`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${service.name} | Balaji Services`} />
-        <meta name="twitter:description" content={`${service.shortDescription} Professional service by Balaji Services.`} />
+        <meta name="twitter:description" content={`Professional ${service.name} service in Bangalore.`} />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Balaji Services" />
       </Helmet>
