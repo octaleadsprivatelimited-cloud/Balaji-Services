@@ -36,23 +36,35 @@ const ContactForm: React.FC<ContactFormProps> = ({ location, articleTitle, class
     e.preventDefault();
     setIsLoading(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitted(true);
+    try {
+      const response = await fetch('https://formspree.io/f/xvgerbrw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        setIsLoading(false);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            phone: '',
+            email: '',
+            location: location || '',
+            serviceType: '',
+            message: ''
+          });
+        }, 3000);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
       setIsLoading(false);
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          location: location || '',
-          serviceType: '',
-          message: ''
-        });
-      }, 3000);
-    }, 1500);
+    }
   };
 
   if (isSubmitted) {

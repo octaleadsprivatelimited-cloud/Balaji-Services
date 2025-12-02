@@ -23,19 +23,49 @@ const Landing: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xvgerbrw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', phone: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
   };
 
-  const handlePopupSubmit = (e: React.FormEvent) => {
+  const handlePopupSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Popup form submission logic would go here
-    setIsSubmitted(true);
-    setShowPopup(false);
-    setTimeout(() => setIsSubmitted(false), 5000);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xvgerbrw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        setShowPopup(false);
+        setFormData({ name: '', phone: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
   };
 
   const benefits = [
